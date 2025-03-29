@@ -1,11 +1,9 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using BusinessLogicLayer.Interfaces;
+using BusinessLogicLayer.Services;
+using DataAccessLayer.Interfaces;
+using DataAccessLayer.Repositories;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogicLayer
 {
@@ -19,21 +17,14 @@ namespace BusinessLogicLayer
 
         public static void AddServices(this IServiceCollection services, IConfiguration configuration)
         {
-            //services.AddScoped<IAuthenticationService, AuthenticationService>();
-            //services.AddScoped<Authentication>();
-            //services.AddScoped<ICourseService, CourseService>();
-            //services.AddScoped<INotificationService, NotificationService>();
-            //services.AddScoped<IChapterService, ChapterService>();
-            //services.AddScoped<IEnrollmentService, EnrollmentService>();
-            //services.AddScoped<ILessonService, LessonService>();
-            //services.AddScoped<ILabService, LabService>();
-            //services.AddScoped<IChapterProgressService, ChapterProgressSevice>();
-            //services.AddScoped<ISubmissionService, SubmissionService>();
-            //services.AddScoped<IPaymentService, PaymentService>();
-            //services.AddScoped<IVnPayService, VnPayService>();
-            //services.AddScoped<IDashboardService, DashboardService>();
-            //services.AddScoped<FcmService>();
-
+            services.AddScoped<IClass, ClassService>();
+            services.AddScoped<IContact, ContactService>();
+            services.AddScoped<ICourse, CourseService>();
+            services.AddScoped<IEnrollment, EnrollmentService>();
+            services.AddScoped<INewsEvent, NewsEventService>();
+            services.AddScoped<IProject, ProjectService>();
+            services.AddScoped<IResource, ResourceService>();
+            services.AddScoped<IUser, UserService>();
         }
         public static void AddRepository(this IServiceCollection services)
         {

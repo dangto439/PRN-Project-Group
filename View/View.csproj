@@ -11,4 +11,22 @@
     <ProjectReference Include="..\DTO\DTO.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Pages\Home\" />
+    <Folder Include="Pages\AboutUs\" />
+    <Folder Include="Pages\Contact\" />
+    <Folder Include="Pages\Admin\" />
+    <Folder Include="Pages\Lecturer\" />
+    <Folder Include="Pages\NewInformation\" />
+    <Folder Include="Pages\Project\" />
+    <Folder Include="Pages\TrainingPrograms\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
 </Project>

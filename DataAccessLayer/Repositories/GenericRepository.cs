@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Interfaces;
+﻿using DataAccessLayer.Entity;
+using DataAccessLayer.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -11,10 +12,10 @@ namespace DataAccessLayer.Repositories
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        protected readonly KidProgramingDbContext _context;
+        protected readonly PRN222ProjectTeamContext _context;
         protected readonly DbSet<T> _dbSet;
 
-        public GenericRepository(KidProgramingDbContext dbContext)
+        public GenericRepository(PRN222ProjectTeamContext dbContext)
         {
             _context = dbContext;
             _dbSet = _context.Set<T>();

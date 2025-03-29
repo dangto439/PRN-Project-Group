@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Interfaces;
+﻿using DataAccessLayer.Entity;
+using DataAccessLayer.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +8,10 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Repositories
 {
-    public class UnitOfWork(KidProgramingDbContext dbContext) : IUnitOfWork
+    public class UnitOfWork(PRN222ProjectTeamContext dbContext) : IUnitOfWork
     {
         private bool disposed = false;
-        private readonly KidProgramingDbContext _dbContext = dbContext;
+        private readonly PRN222ProjectTeamContext _dbContext = dbContext;
 
         public IGenericRepository<T> GetRepository<T>() where T : class
         {
