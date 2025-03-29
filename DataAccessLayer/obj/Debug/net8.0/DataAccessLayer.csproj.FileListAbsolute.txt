@@ -1,0 +1,14 @@
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.deps.json
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.runtimeconfig.json
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.dll
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\bin\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.AssemblyInfo.cs
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.dll
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\obj\Debug\net8.0\refint\DataAccessLayer.dll
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.pdb
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\obj\Debug\net8.0\DataAccessLayer.genruntimeconfig.cache
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\DataAccessLayer\obj\Debug\net8.0\ref\DataAccessLayer.dll

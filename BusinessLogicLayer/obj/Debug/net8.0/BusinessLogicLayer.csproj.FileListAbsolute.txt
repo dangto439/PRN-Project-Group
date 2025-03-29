@@ -1,0 +1,5 @@
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.AssemblyReference.cache
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.AssemblyInfo.cs
+C:\Users\DANG TO\Documents\WorkSpace\Học\PRN222\Razor\PRN222_Project_Final_Team\BusinessLogicLayer\obj\Debug\net8.0\BusinessLogicLayer.csproj.CoreCompileInputs.cache
