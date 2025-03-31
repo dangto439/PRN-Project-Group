@@ -53,5 +53,10 @@ namespace BusinessLogicLayer.Services
             await _unitOfWork.GetRepository<Course>().UpdateAsync(course);
             await _unitOfWork.GetRepository<Course>().SaveAsync();
         }
+
+        public async Task<int> CountCourse()
+        {
+            return await _unitOfWork.GetRepository<Course>().Entities.Where(x => !x.DeleteAt.HasValue).CountAsync();
+        }
     }
 }

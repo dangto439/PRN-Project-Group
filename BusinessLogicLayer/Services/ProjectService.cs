@@ -53,6 +53,10 @@ namespace BusinessLogicLayer.Services
             await _unitOfWork.GetRepository<Project>().UpdateAsync(project);
             await _unitOfWork.GetRepository<Project>().SaveAsync();
         }
+        public async Task<int> CoutProject()
+        {
+            return await _unitOfWork.GetRepository<Project>().Entities.Where(x => !x.DeleteAt.HasValue).CountAsync();
+        }
     }
 
 }

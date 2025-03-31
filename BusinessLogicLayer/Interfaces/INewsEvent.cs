@@ -14,5 +14,6 @@ namespace BusinessLogicLayer.Interfaces
         Task Create(NewsEvent user);
         Task Update(NewsEvent user);
         Task Delete(int id);
+        Task<int> CountNews();
     }
 }

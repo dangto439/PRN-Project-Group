@@ -14,5 +14,6 @@ namespace BusinessLogicLayer.Interfaces
         Task Create(Course user);
         Task Update(Course user);
         Task Delete(int id);
+        Task<int> CountCourse();
     }
 }

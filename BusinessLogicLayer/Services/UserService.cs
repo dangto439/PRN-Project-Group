@@ -59,5 +59,18 @@ namespace BusinessLogicLayer.Services
             await _unitOfWork.GetRepository<User>().UpdateAsync(user);
             await _unitOfWork.GetRepository<User>().SaveAsync();
         }
+
+        public async Task<int> CoutUser()
+        {
+            return await _unitOfWork.GetRepository<User>().Entities.Where(x => !x.DeleteAt.HasValue).CountAsync();
+        }
+        public async Task<int> CoutLecturer()
+        {
+            return await _unitOfWork.GetRepository<User>().Entities.Where(x => !x.DeleteAt.HasValue && x.Role == "LECTURER").CountAsync();
+        }
+        public async Task<int> CoutCustomer()
+        {
+            return await _unitOfWork.GetRepository<User>().Entities.Where(x => !x.DeleteAt.HasValue && x.Role == "CUSTOMER").CountAsync();
+        }
     }
 }

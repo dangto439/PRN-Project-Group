@@ -16,5 +16,9 @@ namespace BusinessLogicLayer.Interfaces
         Task Update (User user);
         Task Delete (int id);
 
+        Task<int> CoutUser();
+        Task<int> CoutLecturer();
+        Task<int> CoutCustomer();
+
     }
 }

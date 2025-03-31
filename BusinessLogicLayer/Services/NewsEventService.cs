@@ -53,6 +53,11 @@ namespace BusinessLogicLayer.Services
             await _unitOfWork.GetRepository<NewsEvent>().UpdateAsync(newsEvent);
             await _unitOfWork.GetRepository<NewsEvent>().SaveAsync();
         }
+
+        public async Task<int> CountNews()
+        {
+            return await _unitOfWork.GetRepository<NewsEvent>().Entities.Where(x => !x.DeleteAt.HasValue).CountAsync();
+        }
     }
 
 }
