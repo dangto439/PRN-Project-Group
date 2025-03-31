@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccessLayer.Entity;
 
@@ -14,7 +15,7 @@ public partial class User
     public string Password { get; set; }
 
     public string Email { get; set; }
-
+    [Column(TypeName = "nvarchar(255)")]
     public string FullName { get; set; }
 
     public string Role { get; set; }

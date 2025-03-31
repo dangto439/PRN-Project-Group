@@ -1,0 +1,20 @@
+﻿@page
+@model View.Pages.NewInformation.IndexModel
+@{
+    ViewData["Title"] = "Danh sách tin tức";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Danh Sách Tin Tức</h2>
+
+    <ul class="list-group" style="margin-bottom:600px">
+        @foreach (var news in Model.NewsList)
+        {
+            <li class="list-group-item">
+                <a asp-page="/NewInformation/NewsDetail" asp-route-id="@news.NewsId" class="text-decoration-none fw-bold">
+                    @news.Title
+                </a>
+            </li>
+        }
+    </ul>
+</div>

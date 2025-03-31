@@ -1,0 +1,12 @@
+﻿@page
+@model View.Pages.Payment.VnPayReturnModel
+@{
+    var alertClass = Model.Message == "Thanh toán thành công!" ? "alert-success" : "alert-danger";
+}
+
+<div class="container text-center mt-5">
+    <div class="alert @alertClass" role="alert">
+        <h2>@Model.Message</h2>
+    </div>
+    <a asp-page="/Home/Index" class="btn btn-primary mt-3">Quay lại trang chủ</a>
+</div>

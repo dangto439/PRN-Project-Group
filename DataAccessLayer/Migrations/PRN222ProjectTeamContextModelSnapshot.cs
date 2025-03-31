@@ -35,7 +35,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("class_name");
 
                     b.Property<int>("CourseId")
@@ -113,7 +113,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("name");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -138,7 +138,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("course_name");
 
                     b.Property<DateTime?>("CreatedAt")
@@ -157,6 +157,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("text")
                         .HasColumnName("description");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(10, 2)")
@@ -275,7 +278,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(255)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(255)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("title");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -326,7 +329,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("project_name");
 
                     b.Property<DateTime>("StartDate")
@@ -383,20 +386,20 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(255)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(255)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("file_url");
 
                     b.Property<string>("ResourceName")
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("resource_name");
 
                     b.Property<string>("ResourceType")
                         .IsRequired()
                         .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("resource_type");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -444,7 +447,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("full_name");
 
                     b.Property<string>("Password")

@@ -2,15 +2,18 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccessLayer.Entity;
 
 public partial class Course
 {
     public int CourseId { get; set; }
-
+    [Column(TypeName = "nvarchar(255)")]
+    public string ImageUrl { get; set; }
+    [Column(TypeName = "nvarchar(255)")]
     public string CourseName { get; set; }
-
+    [Column(TypeName = "nvarchar(max)")]
     public string Description { get; set; }
 
     public string Type { get; set; }

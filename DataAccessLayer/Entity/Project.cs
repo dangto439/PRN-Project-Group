@@ -2,21 +2,23 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccessLayer.Entity;
 
 public partial class Project
 {
     public int ProjectId { get; set; }
-
+    [Column(TypeName = "nvarchar(255)")]
     public string ProjectName { get; set; }
-
+    [Column(TypeName = "nvarchar(max)")]
     public string Description { get; set; }
 
     public DateTime StartDate { get; set; }
 
     public DateTime EndDate { get; set; }
 
+    [Column(TypeName = "varchar(20)")]
     public string Status { get; set; }
 
     public int CreatedBy { get; set; }

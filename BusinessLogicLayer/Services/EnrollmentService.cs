@@ -1,5 +1,7 @@
 ﻿using BusinessLogicLayer.Interfaces;
 using DataAccessLayer.Entity;
+using DataAccessLayer.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +12,46 @@ namespace BusinessLogicLayer.Services
 {
     public class EnrollmentService : IEnrollment
     {
-        public Task Create(Enrollment user)
+        private readonly IUnitOfWork _unitOfWork;
+
+        public EnrollmentService(IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
         }
 
-        public Task Delete(int id)
+        public async Task Create(Enrollment enrollment)
         {
-            throw new NotImplementedException();
+            enrollment.CreatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Enrollment>().InsertAsync(enrollment);
+            await _unitOfWork.GetRepository<Enrollment>().SaveAsync();
         }
 
-        public Task<List<Enrollment>> Get()
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var enrollment = await _unitOfWork.GetRepository<Enrollment>().Entities.FirstOrDefaultAsync(x => x.EnrollmentId == id);
+            if (enrollment != null)
+            {
+                enrollment.DeleteAt = DateTime.Now;
+                await _unitOfWork.GetRepository<Enrollment>().UpdateAsync(enrollment);
+                await _unitOfWork.GetRepository<Enrollment>().SaveAsync();
+            }
         }
 
-        public Task<Enrollment> GetById(int id)
+        public async Task<List<Enrollment>> Get()
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Enrollment>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
         }
 
-        public Task Update(Enrollment user)
+        public async Task<Enrollment?> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Enrollment>().Entities.FirstOrDefaultAsync(x => x.EnrollmentId == id && !x.DeleteAt.HasValue);
+        }
+
+        public async Task Update(Enrollment enrollment)
+        {
+            enrollment.UpdatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Enrollment>().UpdateAsync(enrollment);
+            await _unitOfWork.GetRepository<Enrollment>().SaveAsync();
         }
     }
 }

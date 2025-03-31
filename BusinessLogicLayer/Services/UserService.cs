@@ -42,12 +42,12 @@ namespace BusinessLogicLayer.Services
             return await _unitOfWork.GetRepository<User>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
         }
 
-        public async Task<User?> GetById(int id)
+        public async Task<User> GetById(int id)
         {
             return await _unitOfWork.GetRepository<User>().Entities.FirstOrDefaultAsync(x => x.UserId == id && !x.DeleteAt.HasValue);
         }
 
-        public async Task<User?> Login(string username, string password)
+        public async Task<User> Login(string username, string password)
         {
             var user = await _unitOfWork.GetRepository<User>().Entities.FirstOrDefaultAsync(x => (x.Username == username && x.Password == password) || (x.Email == username && x.Password == password));
             return user;

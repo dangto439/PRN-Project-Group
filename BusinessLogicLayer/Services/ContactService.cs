@@ -1,5 +1,7 @@
 ﻿using BusinessLogicLayer.Interfaces;
 using DataAccessLayer.Entity;
+using DataAccessLayer.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +12,46 @@ namespace BusinessLogicLayer.Services
 {
     public class ContactService : IContact
     {
-        public Task Create(Contact user)
+        private readonly IUnitOfWork _unitOfWork;
+
+        public ContactService(IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
         }
 
-        public Task Delete(int id)
+        public async Task Create(Contact contact)
         {
-            throw new NotImplementedException();
+            contact.CreatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Contact>().InsertAsync(contact);
+            await _unitOfWork.GetRepository<Contact>().SaveAsync();
         }
 
-        public Task<List<Contact>> Get()
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var contact = await _unitOfWork.GetRepository<Contact>().Entities.FirstOrDefaultAsync(x => x.ContactId == id);
+            if (contact != null)
+            {
+                contact.DeleteAt = DateTime.Now;
+                await _unitOfWork.GetRepository<Contact>().UpdateAsync(contact);
+                await _unitOfWork.GetRepository<Contact>().SaveAsync();
+            }
         }
 
-        public Task<Contact> GetById(int id)
+        public async Task<List<Contact>> Get()
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Contact>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
         }
 
-        public Task Update(Contact user)
+        public async Task<Contact?> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Contact>().Entities.FirstOrDefaultAsync(x => x.ContactId == id && !x.DeleteAt.HasValue);
+        }
+
+        public async Task Update(Contact contact)
+        {
+            contact.UpdatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Contact>().UpdateAsync(contact);
+            await _unitOfWork.GetRepository<Contact>().SaveAsync();
         }
     }
 }

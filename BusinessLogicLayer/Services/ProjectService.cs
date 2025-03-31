@@ -1,5 +1,7 @@
 ﻿using BusinessLogicLayer.Interfaces;
 using DataAccessLayer.Entity;
+using DataAccessLayer.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +12,47 @@ namespace BusinessLogicLayer.Services
 {
     public class ProjectService : IProject
     {
-        public Task Create(Project user)
+        private readonly IUnitOfWork _unitOfWork;
+
+        public ProjectService(IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
         }
 
-        public Task Delete(int id)
+        public async Task Create(Project project)
         {
-            throw new NotImplementedException();
+            project.CreatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Project>().InsertAsync(project);
+            await _unitOfWork.GetRepository<Project>().SaveAsync();
         }
 
-        public Task<List<Project>> Get()
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var project = await _unitOfWork.GetRepository<Project>().Entities.FirstOrDefaultAsync(x => x.ProjectId == id);
+            if (project != null)
+            {
+                project.DeleteAt = DateTime.Now;
+                await _unitOfWork.GetRepository<Project>().UpdateAsync(project);
+                await _unitOfWork.GetRepository<Project>().SaveAsync();
+            }
         }
 
-        public Task<Project> GetById(int id)
+        public async Task<List<Project>> Get()
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Project>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
         }
 
-        public Task Update(Project user)
+        public async Task<Project?> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Project>().Entities.FirstOrDefaultAsync(x => x.ProjectId == id && !x.DeleteAt.HasValue);
+        }
+
+        public async Task Update(Project project)
+        {
+            project.UpdatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Project>().UpdateAsync(project);
+            await _unitOfWork.GetRepository<Project>().SaveAsync();
         }
     }
+
 }

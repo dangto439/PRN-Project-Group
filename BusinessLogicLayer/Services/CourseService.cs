@@ -1,5 +1,7 @@
 ﻿using BusinessLogicLayer.Interfaces;
 using DataAccessLayer.Entity;
+using DataAccessLayer.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +12,46 @@ namespace BusinessLogicLayer.Services
 {
     public class CourseService : ICourse
     {
-        public Task Create(Course user)
+        private readonly IUnitOfWork _unitOfWork;
+
+        public CourseService(IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
         }
 
-        public Task Delete(int id)
+        public async Task Create(Course course)
         {
-            throw new NotImplementedException();
+            course.CreatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Course>().InsertAsync(course);
+            await _unitOfWork.GetRepository<Course>().SaveAsync();
         }
 
-        public Task<List<Course>> Get()
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var course = await _unitOfWork.GetRepository<Course>().Entities.FirstOrDefaultAsync(x => x.CourseId == id);
+            if (course != null)
+            {
+                course.DeleteAt = DateTime.Now;
+                await _unitOfWork.GetRepository<Course>().UpdateAsync(course);
+                await _unitOfWork.GetRepository<Course>().SaveAsync();
+            }
         }
 
-        public Task<Course> GetById(int id)
+        public async Task<List<Course>> Get()
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Course>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
         }
 
-        public Task Update(Course user)
+        public async Task<Course?> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Course>().Entities.FirstOrDefaultAsync(x => x.CourseId == id && !x.DeleteAt.HasValue);
+        }
+
+        public async Task Update(Course course)
+        {
+            course.UpdatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Course>().UpdateAsync(course);
+            await _unitOfWork.GetRepository<Course>().SaveAsync();
         }
     }
 }

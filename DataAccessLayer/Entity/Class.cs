@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccessLayer.Entity;
 
@@ -10,7 +11,7 @@ public partial class Class
     public int ClassId { get; set; }
 
     public int CourseId { get; set; }
-
+    [Column(TypeName = "nvarchar(255)")]
     public string ClassName { get; set; }
 
     public DateTime StartDate { get; set; }

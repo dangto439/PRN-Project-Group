@@ -1,5 +1,7 @@
 ﻿using BusinessLogicLayer.Interfaces;
 using DataAccessLayer.Entity;
+using DataAccessLayer.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +12,47 @@ namespace BusinessLogicLayer.Services
 {
     public class ResourceService : IResource
     {
-        public Task Create(Resource user)
+        private readonly IUnitOfWork _unitOfWork;
+
+        public ResourceService(IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
         }
 
-        public Task Delete(int id)
+        public async Task Create(Resource resource)
         {
-            throw new NotImplementedException();
+            resource.CreatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Resource>().InsertAsync(resource);
+            await _unitOfWork.GetRepository<Resource>().SaveAsync();
         }
 
-        public Task<List<Resource>> Get()
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var resource = await _unitOfWork.GetRepository<Resource>().Entities.FirstOrDefaultAsync(x => x.ResourceId == id);
+            if (resource != null)
+            {
+                resource.DeleteAt = DateTime.Now;
+                await _unitOfWork.GetRepository<Resource>().UpdateAsync(resource);
+                await _unitOfWork.GetRepository<Resource>().SaveAsync();
+            }
         }
 
-        public Task<Resource> GetById(int id)
+        public async Task<List<Resource>> Get()
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Resource>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
         }
 
-        public Task Update(Resource user)
+        public async Task<Resource?> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Resource>().Entities.FirstOrDefaultAsync(x => x.ResourceId == id && !x.DeleteAt.HasValue);
+        }
+
+        public async Task Update(Resource resource)
+        {
+            resource.UpdatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Resource>().UpdateAsync(resource);
+            await _unitOfWork.GetRepository<Resource>().SaveAsync();
         }
     }
+
 }

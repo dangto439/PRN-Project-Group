@@ -1,5 +1,7 @@
 ﻿using BusinessLogicLayer.Interfaces;
 using DataAccessLayer.Entity;
+using DataAccessLayer.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +12,47 @@ namespace BusinessLogicLayer.Services
 {
     public class ClassService : IClass
     {
-        public Task Create(Class user)
+        private readonly IUnitOfWork _unitOfWork;
+
+        public ClassService(IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
         }
 
-        public Task Delete(int id)
+        public async Task Create(Class cls)
         {
-            throw new NotImplementedException();
+            cls.CreatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Class>().InsertAsync(cls);
+            await _unitOfWork.GetRepository<Class>().SaveAsync();
         }
 
-        public Task<List<Class>> Get()
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var cls = await _unitOfWork.GetRepository<Class>().Entities.FirstOrDefaultAsync(x => x.ClassId == id);
+            if (cls != null)
+            {
+                cls.DeleteAt = DateTime.Now;
+                await _unitOfWork.GetRepository<Class>().UpdateAsync(cls);
+                await _unitOfWork.GetRepository<Class>().SaveAsync();
+            }
         }
 
-        public Task<Class> GetById(int id)
+        public async Task<List<Class>> Get()
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Class>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
         }
 
-        public Task Update(Class user)
+        public async Task<Class?> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<Class>().Entities.FirstOrDefaultAsync(x => x.ClassId == id && !x.DeleteAt.HasValue);
+        }
+
+        public async Task Update(Class cls)
+        {
+            cls.UpdatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<Class>().UpdateAsync(cls);
+            await _unitOfWork.GetRepository<Class>().SaveAsync();
         }
     }
+
 }

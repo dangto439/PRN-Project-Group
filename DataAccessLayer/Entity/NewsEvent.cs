@@ -2,15 +2,16 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccessLayer.Entity;
 
 public partial class NewsEvent
 {
     public int NewsId { get; set; }
-
+    [Column(TypeName = "nvarchar(255)")]
     public string Title { get; set; }
-
+    [Column(TypeName = "nvarchar(max)")]
     public string Content { get; set; }
 
     public string Category { get; set; }

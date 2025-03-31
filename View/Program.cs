@@ -1,8 +1,11 @@
 using BusinessLogicLayer;
+using BusinessLogicLayer.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApplication(builder.Configuration);
+
+
 
 // Add services to the container.
 builder.Services.AddRazorPages();

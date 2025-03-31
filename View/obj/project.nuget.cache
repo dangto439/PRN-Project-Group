@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "AJwyESS3RejBYYiIj+0d7CCf7dJC6j1wd5/+JiyaB39i/hdXIyq1mDtNxu0hSMYBucfYzH1aCjdA9yERnOF4Pw==",
+  "dgSpecHash": "MdGvh/ZIBYs=",
   "success": true,
   "projectFilePath": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\View.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DANG TO\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\DANG TO\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
     "C:\\Users\\DANG TO\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
+    "C:\\Users\\DANG TO\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.3.0\\microsoft.aspnetcore.http.abstractions.2.3.0.nupkg.sha512",
+    "C:\\Users\\DANG TO\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
     "C:\\Users\\DANG TO\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",
     "C:\\Users\\DANG TO\\.nuget\\packages\\microsoft.build.framework\\17.8.3\\microsoft.build.framework.17.8.3.nupkg.sha512",
     "C:\\Users\\DANG TO\\.nuget\\packages\\microsoft.build.locator\\1.7.8\\microsoft.build.locator.1.7.8.nupkg.sha512",

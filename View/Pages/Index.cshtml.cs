@@ -14,7 +14,7 @@ namespace View.Pages
 
         public void OnGet()
         {
-
+            Response.Redirect("/Home/Index");
         }
     }
 }
