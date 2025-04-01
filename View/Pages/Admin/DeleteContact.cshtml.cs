@@ -1,18 +1,21 @@
+using BusinessLogicLayer.Hubs;
 using BusinessLogicLayer.Interfaces;
 using DataAccessLayer.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.SignalR;
 
 namespace View.Pages.Admin
 {
     public class DeleteContactModel : PageModel
     {
         private readonly IContact _contact;
-        public DeleteContactModel(IContact contact)
+        private readonly IHubContext<SignalRAdmin> _hubContext;
+        public DeleteContactModel(IContact contact, IHubContext<SignalRAdmin> hubContext)
         {
             _contact = contact;
             Contact = new DataAccessLayer.Entity.Contact();
-
+            _hubContext = hubContext;
         }
 
         [BindProperty]
@@ -54,7 +57,7 @@ namespace View.Pages.Admin
                 Contact = contact;
                 await _contact.Delete(id.Value);
             }
-
+            await _hubContext.Clients.All.SendAsync("LoadAdminDashboard");
             return RedirectToPage("/Admin/ContactManagement");
         }
     }

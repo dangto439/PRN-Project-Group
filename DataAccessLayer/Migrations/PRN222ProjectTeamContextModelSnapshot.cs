@@ -137,10 +137,6 @@ namespace DataAccessLayer.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("EnrollmentId"));
 
-                    b.Property<int>("ClassId")
-                        .HasColumnType("int")
-                        .HasColumnName("class_id");
-
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
@@ -162,6 +158,9 @@ namespace DataAccessLayer.Migrations
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)")
                         .HasColumnName("payment_status");
+
+                    b.Property<int>("Progress")
+                        .HasColumnType("int");
 
                     b.Property<int>("StudentId")
                         .HasColumnType("int")
@@ -283,7 +282,7 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasMaxLength(10)
-                        .HasColumnType("varchar(20)")
+                        .HasColumnType("varchar(50)")
                         .HasColumnName("status");
 
                     b.Property<DateTime?>("UpdatedAt")

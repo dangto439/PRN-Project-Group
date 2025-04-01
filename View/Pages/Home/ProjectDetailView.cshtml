@@ -1,0 +1,22 @@
+﻿@page
+@model View.Pages.Home.ProjectDetailViewModel
+@{
+    ViewData["Title"] = Model.Projects?.ProjectName ?? "Không tìm thấy dự án";
+}
+
+<div class="container mt-4">
+    @if (Model.Projects != null)
+    {
+        <h2 class="text-primary">@Model.Projects.ProjectName</h2>
+        <p><strong>Mô tả:</strong> @Model.Projects.Description</p>
+        <p><strong>Ngày bắt đầu:</strong> @Model.Projects.StartDate.ToString("dd/MM/yyyy")</p>
+        <p><strong>Ngày kết thúc:</strong> @Model.Projects.EndDate.ToString("dd/MM/yyyy")</p>
+        <p><strong>Trạng thái:</strong> @Model.Projects.Status</p>
+        <hr />
+    }
+    else
+    {
+        <div class="alert alert-danger">Dự án không tồn tại!</div>
+    }
+    <a asp-page="ProjectView" class="btn btn-secondary mt-3" style="margin-bottom:600px">Quay lại danh sách</a>
+</div>

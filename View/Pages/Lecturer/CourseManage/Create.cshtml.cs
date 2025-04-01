@@ -2,16 +2,20 @@
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using DataAccessLayer.Entity;
 using BusinessLogicLayer.Interfaces;
+using BusinessLogicLayer.Hubs;
+using Microsoft.AspNetCore.SignalR;
 
 namespace View.Pages.Lecturer.CourseManage
 {
     public class CreateModel : PageModel
     {
         private readonly ICourse _course;
+        private readonly IHubContext<SignalRAdmin> _hubContext;
 
-        public CreateModel(ICourse course)
+        public CreateModel(ICourse course, IHubContext<SignalRAdmin> hubContext)
         {
             _course = course;
+            _hubContext = hubContext;
         }
 
         public IActionResult OnGet()
@@ -41,7 +45,7 @@ namespace View.Pages.Lecturer.CourseManage
             }
             Course.CreatedBy = int.Parse(userId);
             await _course.Create(Course);
-
+            await _hubContext.Clients.All.SendAsync("LoadAdminDashboard");
             return RedirectToPage("/Lecturer/CourseManagement");
         }
     }
