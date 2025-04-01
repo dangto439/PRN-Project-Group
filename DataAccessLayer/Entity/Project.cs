@@ -18,7 +18,7 @@ public partial class Project
 
     public DateTime EndDate { get; set; }
 
-    [Column(TypeName = "varchar(20)")]
+    [Column(TypeName = "varchar(50)")]
     public string Status { get; set; }
 
     public int CreatedBy { get; set; }

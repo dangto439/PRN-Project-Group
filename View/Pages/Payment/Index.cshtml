@@ -88,6 +88,7 @@
 
         <form method="post">
             <input type="hidden" name="amount" asp-for="Amount" />
+            <input type="hidden" name="courseId" value="@Model.Course.CourseId" />
             <button type="submit" class="btn-pay">Thanh toán VNPAY</button>
         </form>
 

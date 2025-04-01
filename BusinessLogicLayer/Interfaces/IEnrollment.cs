@@ -11,8 +11,10 @@ namespace BusinessLogicLayer.Interfaces
     {
         Task<List<Enrollment>> Get();
         Task<Enrollment> GetById(int id);
+        Task<Enrollment> GetByCourseId(int courseId);
         Task Create(Enrollment user);
         Task Update(Enrollment user);
+        Task UpdateProgress(int courseId);
         Task Delete(int id);
     }
 }

@@ -11,8 +11,9 @@ public partial class Enrollment
 
     public int StudentId { get; set; }
 
-    public int ClassId { get; set; }
+    public int CourseId { get; set; }
 
+    public int Progress { get; set; }
     public DateTime EnrollmentDate { get; set; }
 
     public string PaymentStatus { get; set; }
@@ -21,8 +22,5 @@ public partial class Enrollment
 
     public DateTime? UpdatedAt { get; set; }
     public DateTime? DeleteAt { get; set; }
-
-    public virtual Class Class { get; set; }
-
     public virtual User Student { get; set; }
 }

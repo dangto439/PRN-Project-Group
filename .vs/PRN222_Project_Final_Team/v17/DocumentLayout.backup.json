@@ -3,152 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\contact\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\contact\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\contact\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8223968-FFDD-40A6-AE8A-675A210CA530}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\dataaccesslayer\\entity\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8223968-FFDD-40A6-AE8A-675A210CA530}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entity\\contact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8223968-FFDD-40A6-AE8A-675A210CA530}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\dataaccesslayer\\entity\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8223968-FFDD-40A6-AE8A-675A210CA530}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entity\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\news\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\news\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\news\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\news\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\news\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\news\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8223968-FFDD-40A6-AE8A-675A210CA530}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\dataaccesslayer\\entity\\newsevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8223968-FFDD-40A6-AE8A-675A210CA530}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entity\\newsevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\services\\newseventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\newseventservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\news\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\news\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\news\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\news\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\newsmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\newsmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\news\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\news\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\usermanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\contactmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\contactmanagement.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\newsmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\newsmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\deletecontact.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\deletecontact.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\delete.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\deletecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\deletecontact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\contactmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\contactmanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\services\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\contactservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\interfaces\\icontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\interfaces\\icontact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\interfaces\\iclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\interfaces\\iclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\usermanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\usermanagement.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\interfaces\\iuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D8223968-FFDD-40A6-AE8A-675A210CA530}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\dataaccesslayer\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D8223968-FFDD-40A6-AE8A-675A210CA530}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\admin\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\admin\\dashboard.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\interfaces\\inewsevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\interfaces\\inewsevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\auth\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\auth\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\view\\pages\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4E7CA082-761A-4724-B0CC-CEBE1CA5BDA5}|View\\View.csproj|solutionrelative:view\\pages\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\interfaces\\icourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\interfaces\\icourse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\interfaces\\iproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\interfaces\\iproject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|c:\\users\\dang to\\documents\\workspace\\h\u1ECDc\\prn222\\razor\\prn222_project_final_team\\businesslogiclayer\\hubs\\signalradmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2B3316-919F-44F8-809E-94E4E9515D95}|BusinessLogicLayer\\BusinessLogicLayer.csproj|solutionrelative:businesslogiclayer\\hubs\\signalradmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -158,480 +42,110 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\DataAccessLayer\\Entity\\Course.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entity\\Course.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\DataAccessLayer\\Entity\\Course.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entity\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T06:21:32.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Index.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Contact\\Index.cshtml.cs",
-              "RelativeDocumentMoniker": "View\\Pages\\Contact\\Index.cshtml.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Contact\\Index.cshtml.cs",
-              "RelativeToolTip": "View\\Pages\\Contact\\Index.cshtml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowBkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T06:20:20.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Contact\\Index.cshtml",
-              "RelativeDocumentMoniker": "View\\Pages\\Contact\\Index.cshtml",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Contact\\Index.cshtml",
-              "RelativeToolTip": "View\\Pages\\Contact\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAFQAAAArAAAAAAAAAA==",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "View\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "View\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAAAJMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-01T06:20:06.843Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Delete.cshtml.cs",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\News\\Delete.cshtml.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Delete.cshtml.cs",
-              "RelativeToolTip": "View\\Pages\\Admin\\News\\Delete.cshtml.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwDUAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:28:14.799Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Delete.cshtml",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\News\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Delete.cshtml",
-              "RelativeToolTip": "View\\Pages\\Admin\\News\\Delete.cshtml",
-              "ViewState": "AgIAADUAAAAAAAAAAAAQwEQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-01T05:28:14.677Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Edit.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Edit.cshtml.cs",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\News\\Edit.cshtml.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Edit.cshtml.cs",
-              "RelativeToolTip": "View\\Pages\\Admin\\News\\Edit.cshtml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAswDcAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:28:14.345Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Edit.cshtml",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\News\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Edit.cshtml",
-              "RelativeToolTip": "View\\Pages\\Admin\\News\\Edit.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-01T05:28:14.257Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\News\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Create.cshtml.cs",
-              "RelativeToolTip": "View\\Pages\\Admin\\News\\Create.cshtml.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwCYAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:28:14.16Z",
+              "WhenOpened": "2025-04-01T21:20:18.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Create.cshtml",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\News\\Create.cshtml",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\News\\Create.cshtml",
-              "RelativeToolTip": "View\\Pages\\Admin\\News\\Create.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAQwCQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-01T05:28:13.961Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "NewsManagement.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\NewsManagement.cshtml.cs",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\NewsManagement.cshtml.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\NewsManagement.cshtml.cs",
-              "RelativeToolTip": "View\\Pages\\Admin\\NewsManagement.cshtml.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:15:35.115Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "NewsManagement.cshtml",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\NewsManagement.cshtml",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\NewsManagement.cshtml",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\NewsManagement.cshtml",
-              "RelativeToolTip": "View\\Pages\\Admin\\NewsManagement.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAQwCsAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-01T05:14:36.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "NewsEvent.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\DataAccessLayer\\Entity\\NewsEvent.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entity\\NewsEvent.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\DataAccessLayer\\Entity\\NewsEvent.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entity\\NewsEvent.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBIAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:13:12.615Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "DeleteContact.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\DeleteContact.cshtml.cs",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\DeleteContact.cshtml.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\DeleteContact.cshtml.cs",
-              "RelativeToolTip": "View\\Pages\\Admin\\DeleteContact.cshtml.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAswDEAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T05:02:13.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DeleteContact.cshtml",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\DeleteContact.cshtml",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\DeleteContact.cshtml",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\DeleteContact.cshtml",
-              "RelativeToolTip": "View\\Pages\\Admin\\DeleteContact.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAA8AAABRAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-01T05:00:07.582Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IContact.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\IContact.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Interfaces\\IContact.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\IContact.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Interfaces\\IContact.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T19:40:08.025Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "IClass.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\IClass.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Interfaces\\IClass.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\IClass.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Interfaces\\IClass.cs",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "View\\Pages\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Auth\\Register.cshtml",
+              "RelativeToolTip": "View\\Pages\\Auth\\Register.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T19:40:05.889Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "ContactService.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Services\\ContactService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\ContactService.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Services\\ContactService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\ContactService.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwDoAAAC7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T19:33:20.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ContactManagement.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\ContactManagement.cshtml.cs",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\ContactManagement.cshtml.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\ContactManagement.cshtml.cs",
-              "RelativeToolTip": "View\\Pages\\Admin\\ContactManagement.cshtml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T19:22:51.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ContactManagement.cshtml",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\ContactManagement.cshtml",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\ContactManagement.cshtml",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\ContactManagement.cshtml",
-              "RelativeToolTip": "View\\Pages\\Admin\\ContactManagement.cshtml",
-              "ViewState": "AgIAADcAAAAAAAAAAAAswEwAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T19:22:02.58Z",
+              "WhenOpened": "2025-04-01T21:16:20.251Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Contact.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\DataAccessLayer\\Entity\\Contact.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entity\\Contact.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\DataAccessLayer\\Entity\\Contact.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entity\\Contact.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABIAAAAsAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Auth\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "View\\Pages\\Auth\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Auth\\Register.cshtml.cs",
+              "RelativeToolTip": "View\\Pages\\Auth\\Register.cshtml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswDMAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T19:21:31.099Z",
+              "WhenOpened": "2025-04-01T21:08:30.371Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Delete.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Delete.cshtml.cs",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\Delete.cshtml.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Delete.cshtml.cs",
-              "RelativeToolTip": "View\\Pages\\Admin\\Delete.cshtml.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwDkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:29:59.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Delete.cshtml",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Delete.cshtml",
-              "RelativeToolTip": "View\\Pages\\Admin\\Delete.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAwwE0AAABoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T16:29:59.05Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Edit.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Edit.cshtml.cs",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\Edit.cshtml.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Edit.cshtml.cs",
-              "RelativeToolTip": "View\\Pages\\Admin\\Edit.cshtml.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAAwC8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:29:58.778Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Edit.cshtml",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Edit.cshtml",
-              "RelativeToolTip": "View\\Pages\\Admin\\Edit.cshtml",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwEYAAABoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T16:29:58.694Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UserManagement.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\UserManagement.cshtml.cs",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\UserManagement.cshtml.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\UserManagement.cshtml.cs",
-              "RelativeToolTip": "View\\Pages\\Admin\\UserManagement.cshtml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:48:13.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\DataAccessLayer\\Entity\\User.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Entity\\User.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\DataAccessLayer\\Entity\\User.cs",
-              "RelativeToolTip": "DataAccessLayer\\Entity\\User.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAswBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:45:12.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UserManagement.cshtml",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\UserManagement.cshtml",
-              "RelativeDocumentMoniker": "View\\Pages\\Admin\\UserManagement.cshtml",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\UserManagement.cshtml",
-              "RelativeToolTip": "View\\Pages\\Admin\\UserManagement.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T15:44:05.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "NewsEventService.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Services\\NewsEventService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\NewsEventService.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Services\\NewsEventService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\NewsEventService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:32:25.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "INewsEvent.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\INewsEvent.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Interfaces\\INewsEvent.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\INewsEvent.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Interfaces\\INewsEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:32:08.041Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "CourseService.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Services\\CourseService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\CourseService.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Services\\CourseService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\CourseService.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:30:03.339Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "ICourse.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\ICourse.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Interfaces\\ICourse.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\ICourse.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Interfaces\\ICourse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:29:41.981Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ProjectService.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Services\\ProjectService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\ProjectService.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Services\\ProjectService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\ProjectService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:27:57.487Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "IProject.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\IProject.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Interfaces\\IProject.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\IProject.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Interfaces\\IProject.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:27:36.165Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Services\\UserService.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Services\\UserService.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwFEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:18:41.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "IUser.cs",
-              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\IUser.cs",
-              "RelativeDocumentMoniker": "BusinessLogicLayer\\Interfaces\\IUser.cs",
-              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Interfaces\\IUser.cs",
-              "RelativeToolTip": "BusinessLogicLayer\\Interfaces\\IUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:18:13.674Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 4,
               "Title": "Dashboard.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Dashboard.cshtml.cs",
               "RelativeDocumentMoniker": "View\\Pages\\Admin\\Dashboard.cshtml.cs",
               "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Dashboard.cshtml.cs",
               "RelativeToolTip": "View\\Pages\\Admin\\Dashboard.cshtml.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAuwCAAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T14:56:20.347Z"
+              "WhenOpened": "2025-04-01T21:07:11.718Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "Dashboard.cshtml",
               "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Dashboard.cshtml",
               "RelativeDocumentMoniker": "View\\Pages\\Admin\\Dashboard.cshtml",
               "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Pages\\Admin\\Dashboard.cshtml",
               "RelativeToolTip": "View\\Pages\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAAAFoAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAKMAAAAAAAAAAAAAALMAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-31T14:55:49.126Z",
+              "WhenOpened": "2025-04-01T21:07:06.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "View\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "View\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-04-01T21:03:52.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignalRAdmin.cs",
+              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Hubs\\SignalRAdmin.cs",
+              "RelativeDocumentMoniker": "BusinessLogicLayer\\Hubs\\SignalRAdmin.cs",
+              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\BusinessLogicLayer\\Hubs\\SignalRAdmin.cs",
+              "RelativeToolTip": "BusinessLogicLayer\\Hubs\\SignalRAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T21:03:36.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Program.cs",
+              "RelativeDocumentMoniker": "View\\Program.cs",
+              "ToolTip": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\H\u1ECDc\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\Program.cs",
+              "RelativeToolTip": "View\\Program.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T21:02:43.343Z",
               "EditorCaption": ""
             }
           ]

@@ -17,6 +17,11 @@ namespace View.Pages.Admin
         public List<NewsEvent> NewsList { get; set; }
         public async Task OnGet()
         {
+            var userRole = HttpContext.Session.GetString("UserRole");
+            if (userRole != "ADMIN")
+            {
+                Response.Redirect("/AccessDenied");
+            }
             NewsList = await _newsEvent.Get();
         }
     }

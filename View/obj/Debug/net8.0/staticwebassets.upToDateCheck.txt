@@ -94,6 +94,8 @@ wwwroot\js\js\main.js
 wwwroot\js\js\owl.carousel.min.js
 wwwroot\js\js\popper.min.js
 wwwroot\js\js\scrollax.min.js
+wwwroot\js\signalr\dist\browser\signalr.js
+wwwroot\js\signalr\dist\browser\signalr.min.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

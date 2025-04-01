@@ -28,7 +28,6 @@ namespace BusinessLogicLayer
 
         public static void AddServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<IClass, ClassService>();
             services.AddScoped<IContact, ContactService>();
             services.AddScoped<ICourse, CourseService>();
             services.AddScoped<IEnrollment, EnrollmentService>();

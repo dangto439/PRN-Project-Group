@@ -1,8 +1,7 @@
 ﻿using BusinessLogicLayer.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.IdentityModel.Tokens.Jwt;
-using System.Threading.Tasks;
+
 
 namespace View.Pages
 {
@@ -37,8 +36,19 @@ namespace View.Pages
                 Message = "Sai tên đăng nhập hoặc mật khẩu.";
                 return Page();
             }
+            HttpContext.Session.SetString("UserRole", user.Role);
+            HttpContext.Session.SetString("UserName", user.FullName);
+            HttpContext.Session.SetString("UserId", user.UserId.ToString());
+            if (user.Role == "ADMIN")
+            {
+                return RedirectToPage("/Admin/Dashboard");
+            }
+            if (user.Role == "LECTURER")
+            {
+                return RedirectToPage("/Lecturer/CourseManagement");
+            }
 
-            return RedirectToPage("/Index");
+            return RedirectToPage("/Home/Index");
         }
     }
 }

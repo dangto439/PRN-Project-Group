@@ -27,6 +27,11 @@ namespace View.Pages.Admin
 
         public async Task OnGet()
         {
+            var userRole = HttpContext.Session.GetString("UserRole");
+            if (userRole != "ADMIN")
+            {
+                Response.Redirect("/AccessDenied");
+            }
             TotalUsers = await _user.CoutUser();
             TotalTeachers = await _user.CoutLecturer();
             TotalStudents = await _user.CoutCustomer();

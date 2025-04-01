@@ -19,6 +19,11 @@ namespace View.Pages.Admin
         public string Search { get; set; }
         public async Task OnGet()
         {
+            var userRole = HttpContext.Session.GetString("UserRole");
+            if (userRole != "ADMIN")
+            {
+                Response.Redirect("/AccessDenied");
+            }
             if (String.IsNullOrEmpty(Search))
             {
                 Users = await _userService.Get();

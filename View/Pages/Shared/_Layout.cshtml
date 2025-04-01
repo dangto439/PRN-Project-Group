@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    var userName = HttpContextAccessor.HttpContext?.Session.GetString("UserName");
+    var userRole = HttpContextAccessor.HttpContext?.Session.GetString("UserRole");
+    bool isAuthenticated = !string.IsNullOrEmpty(userName);
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -18,41 +25,41 @@
     <link rel="stylesheet" href="~/SP25_PRN222_Final_PJ.styles.css" asp-append-version="true" />
     <style>
         .navbar-nav .nav-link {
-            padding: 0.5rem 1.2rem;
-            font-weight: 500;
+        padding: 0.5rem 1.2rem;
+        font-weight: 500;
         }
 
         .navbar-brand {
-            font-weight: 700;
-            font-size: 1.3rem;
+        font-weight: 700;
+        font-size: 1.3rem;
         }
 
         .navbar .navbar-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
         }
 
         .navbar .navbar-center {
-            flex-grow: 1;
-            display: flex;
-            justify-content: center;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
         }
 
         .navbar .navbar-end {
-            display: flex;
-            justify-content: flex-end;
+        display: flex;
+        justify-content: flex-end;
         }
 
         /* ✅ Header và Footer màu xanh dương nhạt */
         .custom-header {
-            background-color: #e0f0ff !important;
+        background-color: #e0f0ff !important;
         }
 
         .custom-footer {
-            background-color: #e0f0ff !important;
-            color: #333;
+        background-color: #e0f0ff !important;
+        color: #333;
         }
     </style>
 </head>
@@ -78,44 +85,44 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-page="/NewInformation/Index">Tin tức</a>
                         </li>
-                        @* <li class="nav-item">
-                            <a class="nav-link" asp-page="/ProgramsPage/Programs">Đào tạo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-page="/ProjectsPage/Index">Dự án</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-page="/NewsPage/Index">Tin tức</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-page="/ContactPage/ContactForms/Contact">Liên hệ</a>
-                        </li> *@
-                        @* @if (isAuthenticated && role == "Admin")
+                        @if (userRole == "ADMIN")
                         {
                             <li class="nav-item">
                                 <a class="nav-link" asp-page="/Admin/Dashboard">Dashboard</a>
                             </li>
+                        }
+                        @if (userRole == "LECTURER")
+                        {
                             <li class="nav-item">
-                                <a class="nav-link" asp-page="/Admin/Users">Quản lý người dùng</a>
+                                <a class="nav-link" asp-page="/Lecturer/CourseManagement">Dashboard</a>
                             </li>
-                        } *@
+                        }
+                        @if (userRole != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Student/MyCourses">Khóa học đã mua</a>
+                            </li>
+                        }
                     </ul>
                 </div>
 
                 <div class="navbar-end me-0">
                     <ul class="navbar-nav">
-                        @* @if (isAuthenticated)
+                        @if (isAuthenticated)
                         {
                             <li class="nav-item">
-                                <a class="nav-link text-danger" asp-page="/Auth/Logout">Đăng xuất (@role)</a>
+                                <span class="nav-link text-primary">Xin chào, @userName (@userRole)</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" asp-page="/Auth/Logout">Đăng xuất</a>
                             </li>
                         }
                         else
-                        { *@
+                        {
                             <li class="nav-item">
-                                <a class="nav-link" asp-page="/Auth/Login">Đăng nhập</a>
+                                <a class="nav-link" asp-page="/Login">Đăng nhập</a>
                             </li>
-                        @* } *@
+                        }
                     </ul>
                 </div>
             </div>
@@ -137,7 +144,8 @@
     <script src="~/js/owl.carousel.min.js"></script>
     <script src="~/js/aos.js"></script>
     <script src="~/js/main.js"></script>
-
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

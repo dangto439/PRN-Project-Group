@@ -24,6 +24,11 @@ namespace View.Pages.Admin.News
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
+            var userRole = HttpContext.Session.GetString("UserRole");
+            if (userRole != "ADMIN")
+            {
+                return RedirectToPage("/AccessDenied");
+            }
             if (id == null)
             {
                 return NotFound();

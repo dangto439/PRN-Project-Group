@@ -1,22 +1,31 @@
 ﻿using BusinessLogicLayer.Interfaces;
 using DataAccessLayer.Entity;
 using DataAccessLayer.Interfaces;
+using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace BusinessLogicLayer.Services
 {
     public class CourseService : ICourse
     {
         private readonly IUnitOfWork _unitOfWork;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public CourseService(IUnitOfWork unitOfWork)
+        public CourseService(IUnitOfWork unitOfWork, IHttpContextAccessor httpContextAccessor)
         {
             _unitOfWork = unitOfWork;
+            _httpContextAccessor = httpContextAccessor;
+        }
+
+        private int? GetCurrentUserId()
+        {
+            var userIdString = _httpContextAccessor.HttpContext?.Session.GetString("UserId");
+            if (!string.IsNullOrEmpty(userIdString) && int.TryParse(userIdString, out int userId))
+            {
+                return userId;
+            }
+            return null;
         }
 
         public async Task Create(Course course)
@@ -39,7 +48,40 @@ namespace BusinessLogicLayer.Services
 
         public async Task<List<Course>> Get()
         {
-            return await _unitOfWork.GetRepository<Course>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
+            var userId = GetCurrentUserId();
+            if (userId == null)
+            {
+                return await _unitOfWork.GetRepository<Course>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
+            }
+            else
+            {
+                var enrollmentList = await _unitOfWork.GetRepository<Enrollment>().Entities
+                                                                                    .Where(x => !x.DeleteAt.HasValue && x.StudentId == userId)
+                                                                                    .Select(x => x.CourseId)
+                                                                                    .ToListAsync();
+                return await _unitOfWork.GetRepository<Course>().Entities
+                                                                .Where(x => !x.DeleteAt.HasValue && !enrollmentList.Contains(x.CourseId))
+                                                                .ToListAsync();
+            }
+        }
+
+        public async Task<List<Course>> GetEnroll()
+        {
+            var userId = GetCurrentUserId();
+            if (userId == null)
+            {
+                return null;
+            }
+            else
+            {
+                var enrollmentList = await _unitOfWork.GetRepository<Enrollment>().Entities
+                                                                                    .Where(x => !x.DeleteAt.HasValue && x.StudentId == userId)
+                                                                                    .Select(x => x.CourseId)
+                                                                                    .ToListAsync();
+                return await _unitOfWork.GetRepository<Course>().Entities
+                                                                .Where(x => !x.DeleteAt.HasValue && enrollmentList.Contains(x.CourseId))
+                                                                .ToListAsync();
+            }    
         }
 
         public async Task<Course?> GetById(int id)

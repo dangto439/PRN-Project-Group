@@ -1,0 +1,105 @@
+﻿@page
+@model View.Pages.Lecturer.ResourceManagementModel
+@{
+    ViewData["Title"] = "Quản lý Tài nguyên";
+}
+
+<div class="container-fluid">
+    <div class="row">
+        <!-- Sidebar -->
+        <nav class="col-md-2 d-none d-md-block sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="/Lecturer/CourseManagement">Quản lý Khóa học</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/Lecturer/ResourceManagement">Quản lý Tài nguyên</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main role="main" class="col-md-10 ml-sm-auto px-4">
+            <h2 class="mt-4">Quản lý Tài nguyên</h2>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <a href="/Lecturer/ResourceManage/Create" class="btn btn-primary">Thêm Tài nguyên</a>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <table class="table table-hover">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th>ID</th>
+                                <th>Tên tài nguyên</th>
+                                <th>Loại</th>
+                                <th>File</th>
+                                <th>Khóa học</th>
+                                <th>Hành động</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var resource in Model.ResourceList)
+                            {
+                                <tr>
+                                    <td>@resource.ResourceId</td>
+                                    <td>@resource.ResourceName</td>
+                                    <td>@resource.ResourceType</td>
+                                    <td><a href="@resource.FileUrl" target="_blank">Xem / Tải xuống</a></td>
+                                    <td>@resource.Course.CourseName</td>
+                                    <td>
+                                        <a asp-page="/Lecturer/ResourceManage/Edit" asp-route-id="@resource.ResourceId" class="btn btn-warning btn-sm">Sửa</a>
+                                        <a asp-page="/Lecturer/ResourceManage/Delete" asp-route-id="@resource.ResourceId" class="btn btn-danger btn-sm">Xóa</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>
+
+<style>
+    .sidebar {
+        height: 100vh;
+        padding-top: 20px;
+        border-right: 2px solid #ddd;
+        background-color: #f8f9fa;
+    }
+
+        .sidebar .nav-link {
+            font-weight: 500;
+            color: #333;
+            padding: 12px 20px;
+            transition: all 0.3s ease;
+        }
+
+            .sidebar .nav-link:hover,
+            .sidebar .nav-link.active {
+                background-color: #007bff;
+                color: white !important;
+                border-radius: 5px;
+            }
+
+    main {
+        background-color: #f4f6f9;
+        padding: 30px;
+        min-height: 100vh;
+    }
+
+    .card {
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .table {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+        .table thead {
+            background-color: #007bff;
+            color: white;
+        }
+</style>
+

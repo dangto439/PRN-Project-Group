@@ -24,9 +24,6 @@ public partial class User
 
     public DateTime? UpdatedAt { get; set; }
     public DateTime? DeleteAt { get; set; }
-
-    public virtual ICollection<Class> Classes { get; set; } = new List<Class>();
-
     public virtual ICollection<Course> Courses { get; set; } = new List<Course>();
 
     public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();

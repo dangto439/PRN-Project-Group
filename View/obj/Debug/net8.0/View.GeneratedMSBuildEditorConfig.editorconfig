@@ -76,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlck1hbmFnZW1lbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Auth/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Auth/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,6 +102,38 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Lecturer/CourseManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVjdHVyZXJcQ291cnNlTWFuYWdlbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Lecturer/CourseManage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVjdHVyZXJcQ291cnNlTWFuYWdlXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Lecturer/CourseManage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVjdHVyZXJcQ291cnNlTWFuYWdlXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Lecturer/CourseManage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVjdHVyZXJcQ291cnNlTWFuYWdlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Lecturer/ResourceManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVjdHVyZXJcUmVzb3VyY2VNYW5hZ2VtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Lecturer/ResourceManage/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVjdHVyZXJcUmVzb3VyY2VNYW5hZ2VcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Lecturer/ResourceManage/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVjdHVyZXJcUmVzb3VyY2VNYW5hZ2VcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Lecturer/ResourceManage/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGVjdHVyZXJcUmVzb3VyY2VNYW5hZ2VcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Login.cshtml]
@@ -126,6 +162,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Student/CourseDetail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxDb3Vyc2VEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Student/MyCourses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxNeUNvdXJzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Student/ViewResource.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxWaWV3UmVzb3VyY2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/_ViewImports.cshtml]

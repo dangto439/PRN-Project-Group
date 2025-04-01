@@ -1,11 +1,12 @@
 using BusinessLogicLayer;
-using BusinessLogicLayer.Services;
+using BusinessLogicLayer.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApplication(builder.Configuration);
-
-
+builder.Services.AddHttpContextAccessor();
+builder.Services.AddSession();
+builder.Services.AddSignalR();
 
 // Add services to the container.
 builder.Services.AddRazorPages();
@@ -24,9 +25,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
-
+app.UseSession();
 app.UseAuthorization();
-
+app.MapHub<SignalRAdmin>("/SignalRAdmin");
 app.MapRazorPages();
 
 app.Run();

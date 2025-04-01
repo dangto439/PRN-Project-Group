@@ -26,9 +26,6 @@ public partial class Course
 
     public DateTime? UpdatedAt { get; set; }
     public DateTime? DeleteAt { get; set; }
-
-    public virtual ICollection<Class> Classes { get; set; } = new List<Class>();
-
     public virtual User CreatedByNavigation { get; set; }
 
     public virtual ICollection<Resource> Resources { get; set; } = new List<Resource>();

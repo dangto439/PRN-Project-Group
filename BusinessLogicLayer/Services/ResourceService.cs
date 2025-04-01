@@ -39,12 +39,17 @@ namespace BusinessLogicLayer.Services
 
         public async Task<List<Resource>> Get()
         {
-            return await _unitOfWork.GetRepository<Resource>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
+            return await _unitOfWork.GetRepository<Resource>().Entities.Where(x => !x.DeleteAt.HasValue).Include(x => x.Course).AsNoTracking().ToListAsync();
         }
 
         public async Task<Resource?> GetById(int id)
         {
-            return await _unitOfWork.GetRepository<Resource>().Entities.FirstOrDefaultAsync(x => x.ResourceId == id && !x.DeleteAt.HasValue);
+            return await _unitOfWork.GetRepository<Resource>().Entities.Include(x => x.Course).AsNoTracking().FirstOrDefaultAsync(x => x.ResourceId == id && !x.DeleteAt.HasValue);
+        }
+
+        public async Task<List<Resource>> GetByCourseId(int courseId)
+        {
+            return await _unitOfWork.GetRepository<Resource>().Entities.Where(x => !x.DeleteAt.HasValue && x.CourseId == courseId).Include(x => x.Course).AsNoTracking().ToListAsync();
         }
 
         public async Task Update(Resource resource)

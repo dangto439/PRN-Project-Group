@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yo89eX5KQr1beAbJnz6aI1t0iappaDu8OJbxFPOZsbM=",
+  "Hash": "2Ysww1e2wwnY4q6P4WvJ3qxi42JriImIxlnniQdlPSA=",
   "Source": "View",
   "BasePath": "_content/View",
   "Mode": "Default",
@@ -2075,6 +2075,48 @@
       "OriginalItemSpec": "wwwroot\\js\\js\\scrollax.min.js"
     },
     {
+      "Identity": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "SourceId": "View",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\",
+      "BasePath": "_content/View",
+      "RelativePath": "js/signalr/dist/browser/signalr#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cqu3aupeo3",
+      "Integrity": "rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Identity": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "SourceId": "View",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\",
+      "BasePath": "_content/View",
+      "RelativePath": "js/signalr/dist/browser/signalr.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m3i9f6419i",
+      "Integrity": "4opyCjWbN8sBV1jVQ/kIcw7Vu+R42wlQa7aIfxgxNTg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js"
+    },
+    {
       "Identity": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\site.js",
       "SourceId": "View",
       "SourceType": "Discovered",
@@ -2089,8 +2131,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "xtxxf3hu2r",
-      "Integrity": "hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=",
+      "Fingerprint": "rhumva0stc",
+      "Integrity": "IdWOPxAElY+H3Ftzs31zimcTdZATNZvRlJQeH5YTpD8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -11251,6 +11293,170 @@
       ]
     },
     {
+      "Route": "js/signalr/dist/browser/signalr.cqu3aupeo3.js",
+      "AssetFile": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160262"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 06:55:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cqu3aupeo3"
+        },
+        {
+          "Name": "label",
+          "Value": "js/signalr/dist/browser/signalr.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA="
+        }
+      ]
+    },
+    {
+      "Route": "js/signalr/dist/browser/signalr.js",
+      "AssetFile": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "160262"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 06:55:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rK9Zx8UOZ+yR2hZ9Ov8dBexROapvuO2mE9jAx7ZIquA="
+        }
+      ]
+    },
+    {
+      "Route": "js/signalr/dist/browser/signalr.min.js",
+      "AssetFile": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47647"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4opyCjWbN8sBV1jVQ/kIcw7Vu+R42wlQa7aIfxgxNTg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 06:55:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4opyCjWbN8sBV1jVQ/kIcw7Vu+R42wlQa7aIfxgxNTg="
+        }
+      ]
+    },
+    {
+      "Route": "js/signalr/dist/browser/signalr.min.m3i9f6419i.js",
+      "AssetFile": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "47647"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4opyCjWbN8sBV1jVQ/kIcw7Vu+R42wlQa7aIfxgxNTg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Apr 2025 06:55:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m3i9f6419i"
+        },
+        {
+          "Name": "label",
+          "Value": "js/signalr/dist/browser/signalr.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4opyCjWbN8sBV1jVQ/kIcw7Vu+R42wlQa7aIfxgxNTg="
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -11261,7 +11467,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "654"
         },
         {
           "Name": "Content-Type",
@@ -11269,11 +11475,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"IdWOPxAElY+H3Ftzs31zimcTdZATNZvRlJQeH5YTpD8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:59:20 GMT"
+          "Value": "Tue, 01 Apr 2025 21:17:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11283,12 +11489,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-IdWOPxAElY+H3Ftzs31zimcTdZATNZvRlJQeH5YTpD8="
         }
       ]
     },
     {
-      "Route": "js/site.xtxxf3hu2r.js",
+      "Route": "js/site.rhumva0stc.js",
       "AssetFile": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -11298,7 +11504,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "654"
         },
         {
           "Name": "Content-Type",
@@ -11306,11 +11512,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"IdWOPxAElY+H3Ftzs31zimcTdZATNZvRlJQeH5YTpD8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 29 Mar 2025 16:59:20 GMT"
+          "Value": "Tue, 01 Apr 2025 21:17:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11320,7 +11526,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
+          "Value": "rhumva0stc"
         },
         {
           "Name": "label",
@@ -11328,7 +11534,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
+          "Value": "sha256-IdWOPxAElY+H3Ftzs31zimcTdZATNZvRlJQeH5YTpD8="
         }
       ]
     },

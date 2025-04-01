@@ -19,6 +19,11 @@ namespace View.Pages.Admin
         public DataAccessLayer.Entity.Contact Contact { get; set; } = default!;
         public async Task<IActionResult> OnGet(int? id)
         {
+            var userRole = HttpContext.Session.GetString("UserRole");
+            if (userRole != "ADMIN")
+            {
+                return RedirectToPage("/AccessDenied");
+            }
             if (id == null)
             {
                 return NotFound();
