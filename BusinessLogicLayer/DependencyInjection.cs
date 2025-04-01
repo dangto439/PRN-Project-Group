@@ -1,7 +1,9 @@
 ﻿using BusinessLogicLayer.Interfaces;
 using BusinessLogicLayer.Services;
+using DataAccessLayer.Entity;
 using DataAccessLayer.Interfaces;
 using DataAccessLayer.Repositories;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,13 +13,21 @@ namespace BusinessLogicLayer
     {
         public static void AddApplication(this IServiceCollection services, IConfiguration configuration)
         {
+            services.AddRepository(configuration);
             services.AddServices(configuration);
-            services.AddRepository();
+            
+        }
+
+        public static void AddRepository(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddDbContext<PRN222ProjectTeamContext>(options =>
+                options.UseSqlServer(configuration.GetConnectionString("DefaultConnection"))
+            );
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
         }
 
         public static void AddServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddScoped<IClass, ClassService>();
             services.AddScoped<IContact, ContactService>();
             services.AddScoped<ICourse, CourseService>();
             services.AddScoped<IEnrollment, EnrollmentService>();
@@ -25,10 +35,8 @@ namespace BusinessLogicLayer
             services.AddScoped<IProject, ProjectService>();
             services.AddScoped<IResource, ResourceService>();
             services.AddScoped<IUser, UserService>();
-        }
-        public static void AddRepository(this IServiceCollection services)
-        {
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            services.AddScoped<IVnPay, VnPayService>();
+            
         }
     }
 }

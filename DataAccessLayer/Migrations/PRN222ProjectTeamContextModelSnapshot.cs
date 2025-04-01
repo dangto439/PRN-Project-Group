@@ -22,63 +22,6 @@ namespace DataAccessLayer.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("DataAccessLayer.Entity.Class", b =>
-                {
-                    b.Property<int>("ClassId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("class_id");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClassId"));
-
-                    b.Property<string>("ClassName")
-                        .IsRequired()
-                        .HasMaxLength(100)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
-                        .HasColumnName("class_name");
-
-                    b.Property<int>("CourseId")
-                        .HasColumnType("int")
-                        .HasColumnName("course_id");
-
-                    b.Property<DateTime?>("CreatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime")
-                        .HasColumnName("created_at")
-                        .HasDefaultValueSql("(getdate())");
-
-                    b.Property<DateTime?>("DeleteAt")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("EndDate")
-                        .HasColumnType("date")
-                        .HasColumnName("end_date");
-
-                    b.Property<int>("LecturerId")
-                        .HasColumnType("int")
-                        .HasColumnName("lecturer_id");
-
-                    b.Property<DateTime>("StartDate")
-                        .HasColumnType("date")
-                        .HasColumnName("start_date");
-
-                    b.Property<DateTime?>("UpdatedAt")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("datetime")
-                        .HasColumnName("updated_at")
-                        .HasDefaultValueSql("(getdate())");
-
-                    b.HasKey("ClassId")
-                        .HasName("PK__Classes__FDF479868DEADBFA");
-
-                    b.HasIndex("CourseId");
-
-                    b.HasIndex("LecturerId");
-
-                    b.ToTable("Classes");
-                });
-
             modelBuilder.Entity("DataAccessLayer.Entity.Contact", b =>
                 {
                     b.Property<int>("ContactId")
@@ -113,7 +56,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("name");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -138,7 +81,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("course_name");
 
                     b.Property<DateTime?>("CreatedAt")
@@ -157,6 +100,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("text")
                         .HasColumnName("description");
+
+                    b.Property<string>("ImageUrl")
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(10, 2)")
@@ -195,6 +141,9 @@ namespace DataAccessLayer.Migrations
                         .HasColumnType("int")
                         .HasColumnName("class_id");
 
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("CreatedAt")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("datetime")
@@ -226,8 +175,6 @@ namespace DataAccessLayer.Migrations
 
                     b.HasKey("EnrollmentId")
                         .HasName("PK__Enrollme__6D24AA7A2F897312");
-
-                    b.HasIndex("ClassId");
 
                     b.HasIndex("StudentId");
 
@@ -275,7 +222,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(255)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(255)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("title");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -326,7 +273,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("project_name");
 
                     b.Property<DateTime>("StartDate")
@@ -336,7 +283,7 @@ namespace DataAccessLayer.Migrations
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)")
+                        .HasColumnType("varchar(20)")
                         .HasColumnName("status");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -383,20 +330,20 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(255)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(255)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("file_url");
 
                     b.Property<string>("ResourceName")
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("resource_name");
 
                     b.Property<string>("ResourceType")
                         .IsRequired()
                         .HasMaxLength(10)
-                        .HasColumnType("nvarchar(10)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("resource_type");
 
                     b.Property<DateTime?>("UpdatedAt")
@@ -444,7 +391,7 @@ namespace DataAccessLayer.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(100)")
+                        .HasColumnType("nvarchar(255)")
                         .HasColumnName("full_name");
 
                     b.Property<string>("Password")
@@ -485,25 +432,6 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("DataAccessLayer.Entity.Class", b =>
-                {
-                    b.HasOne("DataAccessLayer.Entity.Course", "Course")
-                        .WithMany("Classes")
-                        .HasForeignKey("CourseId")
-                        .IsRequired()
-                        .HasConstraintName("FK__Classes__course___45F365D3");
-
-                    b.HasOne("DataAccessLayer.Entity.User", "Lecturer")
-                        .WithMany("Classes")
-                        .HasForeignKey("LecturerId")
-                        .IsRequired()
-                        .HasConstraintName("FK__Classes__lecture__46E78A0C");
-
-                    b.Navigation("Course");
-
-                    b.Navigation("Lecturer");
-                });
-
             modelBuilder.Entity("DataAccessLayer.Entity.Course", b =>
                 {
                     b.HasOne("DataAccessLayer.Entity.User", "CreatedByNavigation")
@@ -517,19 +445,11 @@ namespace DataAccessLayer.Migrations
 
             modelBuilder.Entity("DataAccessLayer.Entity.Enrollment", b =>
                 {
-                    b.HasOne("DataAccessLayer.Entity.Class", "Class")
-                        .WithMany("Enrollments")
-                        .HasForeignKey("ClassId")
-                        .IsRequired()
-                        .HasConstraintName("FK__Enrollmen__class__4D94879B");
-
                     b.HasOne("DataAccessLayer.Entity.User", "Student")
                         .WithMany("Enrollments")
                         .HasForeignKey("StudentId")
                         .IsRequired()
                         .HasConstraintName("FK__Enrollmen__stude__4CA06362");
-
-                    b.Navigation("Class");
 
                     b.Navigation("Student");
                 });
@@ -575,22 +495,13 @@ namespace DataAccessLayer.Migrations
                     b.Navigation("CreatedByNavigation");
                 });
 
-            modelBuilder.Entity("DataAccessLayer.Entity.Class", b =>
-                {
-                    b.Navigation("Enrollments");
-                });
-
             modelBuilder.Entity("DataAccessLayer.Entity.Course", b =>
                 {
-                    b.Navigation("Classes");
-
                     b.Navigation("Resources");
                 });
 
             modelBuilder.Entity("DataAccessLayer.Entity.User", b =>
                 {
-                    b.Navigation("Classes");
-
                     b.Navigation("Courses");
 
                     b.Navigation("Enrollments");

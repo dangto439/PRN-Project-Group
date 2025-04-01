@@ -1,0 +1,106 @@
+﻿@page
+@model View.Pages.Student.CourseDetailModel
+@{
+    ViewData["Title"] = "Chi tiết khóa học";
+}
+
+<h2 class="course-title">@Model.Course.CourseName</h2>
+<div class="progress-container">
+    <label>Tiến độ khóa học:</label>
+    <div class="progress-bar">
+        <div class="progress-fill" style="width: @Model.Percent%;">
+            @Model.Percent%
+        </div>
+    </div>
+</div>
+@if (Model.Resources != null && Model.Resources.Any())
+{
+    <ul class="resource-list">
+        @foreach (var resource in Model.Resources)
+        {
+            <li class="resource-item">
+                <a href="/Student/ViewResource?resourceId=@resource.ResourceId" class="resource-link">
+                    @resource.ResourceName
+                </a>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p class="no-resources">Khóa học hiện chưa có tài liệu</p>
+}
+
+
+<style>
+    .course-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #28a745; /* Màu xanh lá cho tiêu đề khóa học */
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .resource-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        text-align: left;
+    }
+
+    .resource-item {
+        background-color: #f9f9f9;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 8px;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+        .resource-item:hover {
+            background-color: #e2e2e2; /* Làm nổi bật khi hover */
+        }
+
+    .resource-link {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+        font-size: 1.1rem;
+        display: block;
+    }
+
+        .resource-link:hover {
+            color: #0056b3; /* Màu sắc khi hover */
+        }
+
+    .no-resources {
+        color: #dc3545;
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .progress-container {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .progress-bar {
+        width: 100%;
+        background-color: #e9ecef;
+        border-radius: 8px;
+        overflow: hidden;
+        height: 25px;
+        position: relative;
+    }
+
+    .progress-fill {
+        height: 100%;
+        background-color: #28a745; /* Màu xanh lá */
+        color: white;
+        text-align: center;
+        line-height: 25px;
+        font-weight: bold;
+        transition: width 0.5s ease-in-out;
+    }
+
+</style>

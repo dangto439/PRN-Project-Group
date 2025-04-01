@@ -1,51 +1,151 @@
-﻿<!DOCTYPE html>
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor HttpContextAccessor
+
+@{
+    var userName = HttpContextAccessor.HttpContext?.Session.GetString("UserName");
+    var userRole = HttpContextAccessor.HttpContext?.Session.GetString("UserRole");
+    bool isAuthenticated = !string.IsNullOrEmpty(userName);
+}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - View</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <title>@ViewData["Title"] - SP25_PRN222_Final_PJ</title>
+
+    <!-- ✅ Mediplus CSS -->
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/animate.css" />
+    <link rel="stylesheet" href="~/css/aos.css" />
+    <link rel="stylesheet" href="~/css/ionicons.min.css" />
+    <link rel="stylesheet" href="~/css/magnific-popup.css" />
+    <link rel="stylesheet" href="~/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="~/css/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/View.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SP25_PRN222_Final_PJ.styles.css" asp-append-version="true" />
+    <style>
+        .navbar-nav .nav-link {
+        padding: 0.5rem 1.2rem;
+        font-weight: 500;
+        }
+
+        .navbar-brand {
+        font-weight: 700;
+        font-size: 1.3rem;
+        }
+
+        .navbar .navbar-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        }
+
+        .navbar .navbar-center {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        }
+
+        .navbar .navbar-end {
+        display: flex;
+        justify-content: flex-end;
+        }
+
+        /* ✅ Header và Footer màu xanh dương nhạt */
+        .custom-header {
+        background-color: #e0f0ff !important;
+        }
+
+        .custom-footer {
+        background-color: #e0f0ff !important;
+        color: #333;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- ✅ Navbar -->
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">View</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+        <nav class="navbar navbar-expand-lg custom-header shadow-sm">
+            <div class="container-fluid navbar-container px-4">
+                <a class="navbar-brand fw-bold ms-0" asp-page="/Home/Index">Mediplus</a>
+
+                <div class="navbar-center">
+                    <ul class="navbar-nav flex-row">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a class="nav-link" asp-page="/Home/Index">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link" asp-page="/AboutUs/Index">Giới thiệu</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/Contact/Index">Liên hệ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-page="/NewInformation/Index">Tin tức</a>
+                        </li>
+                        @if (userRole == "ADMIN")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Admin/Dashboard">Dashboard</a>
+                            </li>
+                        }
+                        @if (userRole == "LECTURER")
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Lecturer/CourseManagement">Dashboard</a>
+                            </li>
+                        }
+                        @if (userRole != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Student/MyCourses">Khóa học đã mua</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+
+                <div class="navbar-end me-0">
+                    <ul class="navbar-nav">
+                        @if (isAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <span class="nav-link text-primary">Xin chào, @userName (@userRole)</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-danger" asp-page="/Auth/Logout">Đăng xuất</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-page="/Login">Đăng nhập</a>
+                            </li>
+                        }
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
 
-    <footer class="border-top footer text-muted">
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <footer class="footer custom-footer text-center py-3">
         <div class="container">
-            &copy; 2025 - View - <a asp-area="" asp-page="/Privacy">Privacy</a>
+            &copy; 2025 - SP25_PRN222_Final_Project_Team | Thiết kế bởi DangTo
         </div>
     </footer>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/aos.js"></script>
+    <script src="~/js/main.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-
+    <script src="~/js/signalr/dist/browser/signalr.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

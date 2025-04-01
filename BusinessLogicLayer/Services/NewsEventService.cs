@@ -1,5 +1,7 @@
 ﻿using BusinessLogicLayer.Interfaces;
 using DataAccessLayer.Entity;
+using DataAccessLayer.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,29 +12,52 @@ namespace BusinessLogicLayer.Services
 {
     public class NewsEventService : INewsEvent
     {
-        public Task Create(NewsEvent user)
+        private readonly IUnitOfWork _unitOfWork;
+
+        public NewsEventService(IUnitOfWork unitOfWork)
         {
-            throw new NotImplementedException();
+            _unitOfWork = unitOfWork;
         }
 
-        public Task Delete(int id)
+        public async Task Create(NewsEvent newsEvent)
         {
-            throw new NotImplementedException();
+            newsEvent.CreatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<NewsEvent>().InsertAsync(newsEvent);
+            await _unitOfWork.GetRepository<NewsEvent>().SaveAsync();
         }
 
-        public Task<List<NewsEvent>> Get()
+        public async Task Delete(int id)
         {
-            throw new NotImplementedException();
+            var newsEvent = await _unitOfWork.GetRepository<NewsEvent>().Entities.FirstOrDefaultAsync(x => x.NewsId == id);
+            if (newsEvent != null)
+            {
+                newsEvent.DeleteAt = DateTime.Now;
+                await _unitOfWork.GetRepository<NewsEvent>().UpdateAsync(newsEvent);
+                await _unitOfWork.GetRepository<NewsEvent>().SaveAsync();
+            }
         }
 
-        public Task<NewsEvent> GetById(int id)
+        public async Task<List<NewsEvent>> Get()
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<NewsEvent>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
         }
 
-        public Task Update(NewsEvent user)
+        public async Task<NewsEvent?> GetById(int id)
         {
-            throw new NotImplementedException();
+            return await _unitOfWork.GetRepository<NewsEvent>().Entities.FirstOrDefaultAsync(x => x.NewsId == id && !x.DeleteAt.HasValue);
+        }
+
+        public async Task Update(NewsEvent newsEvent)
+        {
+            newsEvent.UpdatedAt = DateTime.Now;
+            await _unitOfWork.GetRepository<NewsEvent>().UpdateAsync(newsEvent);
+            await _unitOfWork.GetRepository<NewsEvent>().SaveAsync();
+        }
+
+        public async Task<int> CountNews()
+        {
+            return await _unitOfWork.GetRepository<NewsEvent>().Entities.Where(x => !x.DeleteAt.HasValue).CountAsync();
         }
     }
+
 }

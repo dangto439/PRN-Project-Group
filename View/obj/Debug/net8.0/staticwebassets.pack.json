@@ -2,15 +2,399 @@
   "Files": [
     {
       "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\View.bundle.scp.css",
-      "PackagePath": "staticwebassets\\View.bundle.scp.css"
+      "PackagePath": "staticwebassets\\View.ek109farvu.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\css\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\aos.css",
+      "PackagePath": "staticwebassets\\css\\aos.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\css\\mixins\\_text-hide.css",
+      "PackagePath": "staticwebassets\\css\\css\\mixins\\_text-hide.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\icomoon.css",
+      "PackagePath": "staticwebassets\\css\\icomoon.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.theme.default.min.css"
     },
     {
       "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
       "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\flaticon\\backup.txt",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\backup.txt"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\flaticon\\font\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\flaticon\\font\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\flaticon\\font\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\flaticon\\font\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\flaticon\\font\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\flaticon\\font\\_flaticon.scss",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\_flaticon.scss"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\flaticon\\font\\flaticon.css",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\flaticon\\font\\flaticon.html",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\font\\flaticon.html"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\flaticon\\license\\license.pdf",
+      "PackagePath": "staticwebassets\\fonts\\flaticon\\license\\license.pdf"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\icomoon\\icomoon.eot",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\icomoon.eot"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\icomoon\\icomoon.svg",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\icomoon.svg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\icomoon\\icomoon.ttf",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\icomoon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\icomoon\\icomoon.woff",
+      "PackagePath": "staticwebassets\\fonts\\icomoon\\icomoon.woff"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\ionicons\\css\\_ionicons.scss",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\css\\_ionicons.scss"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\ionicons\\css\\ionicons.min.css",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\css\\ionicons.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\ionicons\\fonts\\ionicons.eot",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\fonts\\ionicons.eot"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\ionicons\\fonts\\ionicons.svg",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\fonts\\ionicons.svg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\ionicons\\fonts\\ionicons.ttf",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\fonts\\ionicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\ionicons\\fonts\\ionicons.woff",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\fonts\\ionicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\ionicons\\fonts\\ionicons.woff2",
+      "PackagePath": "staticwebassets\\fonts\\ionicons\\fonts\\ionicons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\open-iconic\\open-iconic.eot",
+      "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.eot"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\open-iconic\\open-iconic.otf",
+      "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.otf"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\open-iconic\\open-iconic.svg",
+      "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.svg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\open-iconic\\open-iconic.ttf",
+      "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.ttf"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\fonts\\open-iconic\\open-iconic.woff",
+      "PackagePath": "staticwebassets\\fonts\\open-iconic\\open-iconic.woff"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\about.jpg",
+      "PackagePath": "staticwebassets\\images\\about.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\bg_1.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\bg_2.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\bg_3.jpg",
+      "PackagePath": "staticwebassets\\images\\bg_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\courses\\ai.jpg",
+      "PackagePath": "staticwebassets\\images\\courses\\ai.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\courses\\csharp.jpg",
+      "PackagePath": "staticwebassets\\images\\courses\\csharp.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\courses\\ml.jpg",
+      "PackagePath": "staticwebassets\\images\\courses\\ml.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\courses\\python.jpg",
+      "PackagePath": "staticwebassets\\images\\courses\\python.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\courses\\webdesign.jpg",
+      "PackagePath": "staticwebassets\\images\\courses\\webdesign.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\dept-1.jpg",
+      "PackagePath": "staticwebassets\\images\\dept-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\doc-1.jpg",
+      "PackagePath": "staticwebassets\\images\\doc-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\doc-2.jpg",
+      "PackagePath": "staticwebassets\\images\\doc-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\doc-3.jpg",
+      "PackagePath": "staticwebassets\\images\\doc-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\doc-4.jpg",
+      "PackagePath": "staticwebassets\\images\\doc-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\doc-5.jpg",
+      "PackagePath": "staticwebassets\\images\\doc-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\doc-6.jpg",
+      "PackagePath": "staticwebassets\\images\\doc-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\doc-7.jpg",
+      "PackagePath": "staticwebassets\\images\\doc-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\doc-8.jpg",
+      "PackagePath": "staticwebassets\\images\\doc-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\footer-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\footer-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\google-icon.png",
+      "PackagePath": "staticwebassets\\images\\google-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\image_1.jpg",
+      "PackagePath": "staticwebassets\\images\\image_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\image_2.jpg",
+      "PackagePath": "staticwebassets\\images\\image_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\image_3.jpg",
+      "PackagePath": "staticwebassets\\images\\image_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\image_4.jpg",
+      "PackagePath": "staticwebassets\\images\\image_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\image_5.jpg",
+      "PackagePath": "staticwebassets\\images\\image_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\image_6.jpg",
+      "PackagePath": "staticwebassets\\images\\image_6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\image_7.jpg",
+      "PackagePath": "staticwebassets\\images\\image_7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\image_8.jpg",
+      "PackagePath": "staticwebassets\\images\\image_8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\loc.png",
+      "PackagePath": "staticwebassets\\images\\loc.png"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\person_1.jpg",
+      "PackagePath": "staticwebassets\\images\\person_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\person_2.jpg",
+      "PackagePath": "staticwebassets\\images\\person_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\person_3.jpg",
+      "PackagePath": "staticwebassets\\images\\person_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\person_4.jpg",
+      "PackagePath": "staticwebassets\\images\\person_4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\users\\lecturer1.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\lecturer1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\users\\lecturer2.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\lecturer2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\users\\lecturer3.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\lecturer3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\images\\users\\lecturer4.jpg",
+      "PackagePath": "staticwebassets\\images\\users\\lecturer4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\aos.js",
+      "PackagePath": "staticwebassets\\js\\js\\aos.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\google-map.js",
+      "PackagePath": "staticwebassets\\js\\js\\google-map.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\jquery-3.2.1.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\jquery-3.2.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\jquery-migrate-3.0.1.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\jquery-migrate-3.0.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\jquery.animateNumber.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\jquery.animateNumber.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\jquery.easing.1.3.js",
+      "PackagePath": "staticwebassets\\js\\js\\jquery.easing.1.3.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\jquery.stellar.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\jquery.stellar.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\jquery.waypoints.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\jquery.waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\js\\scrollax.min.js",
+      "PackagePath": "staticwebassets\\js\\js\\scrollax.min.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\signalr\\dist\\browser\\signalr.js",
+      "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.js"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\signalr\\dist\\browser\\signalr.min.js",
+      "PackagePath": "staticwebassets\\js\\signalr\\dist\\browser\\signalr.min.js"
     },
     {
       "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\js\\site.js",
@@ -83,6 +467,22 @@
     {
       "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.css.map"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css"
+    },
+    {
+      "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-theme.min.css.map"
     },
     {
       "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
@@ -243,6 +643,10 @@
     {
       "Id": "C:\\Users\\DANG TO\\Documents\\WorkSpace\\Học\\PRN222\\Razor\\PRN222_Project_Final_Team\\View\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.View.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.View.Microsoft.AspNetCore.StaticWebAssets.props",

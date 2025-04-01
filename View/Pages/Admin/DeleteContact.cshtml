@@ -1,0 +1,67 @@
+﻿@page
+@model View.Pages.Admin.DeleteContactModel
+@{
+    ViewData["Title"] = "Xóa Liên Lạc";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-danger text-white">
+            <h3 class="mb-0 text-light"><i class="fas fa-trash-alt me-2"></i> Xác nhận xóa</h3>
+        </div>
+        <div class="card-body">
+            <h4 class="text-danger mb-4">Bạn có chắc chắn muốn xóa liên lạc này?</h4>
+            <dl class="row">
+                <dt class="col-sm-4 text-muted">Họ tên</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.Contact.Name)</dd>
+                <dt class="col-sm-4 text-muted">Email</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.Contact.Email)</dd>
+                <dt class="col-sm-4 text-muted">Nội dung</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.Contact.Message)</dd>
+                <dt class="col-sm-4 text-muted">Ngày gửi</dt>
+                <dd class="col-sm-8">@Html.DisplayFor(model => model.Contact.CreatedAt)</dd>
+            </dl>
+        </div>
+        <div class="card-footer bg-light">
+            <form method="post">
+                <input type="hidden" asp-for="Contact.ContactId" />
+                <div class="d-flex justify-content-between">
+                    <a asp-page="./ContactManagement" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i> Quay lại
+                    </a>
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fas fa-trash-alt me-2"></i> Xác nhận xóa
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openEditPopup(id, name, email, role) {
+        document.getElementById("editUserId").value = id;
+        document.getElementById("editUserName").value = name;
+        document.getElementById("editUserEmail").value = email;
+        document.getElementById("editUserRole").value = role;
+        $('#editUserModal').modal('show');
+    }
+
+    function saveUserChanges() {
+        var id = document.getElementById("editUserId").value;
+        var name = document.getElementById("editUserName").value;
+        var email = document.getElementById("editUserEmail").value;
+        var role = document.getElementById("editUserRole").value;
+
+        console.log("Cập nhật User", { id, name, email, role });
+        $('#editUserModal').modal('hide');
+    }
+
+    function deleteUser(id) {
+        if (confirm("Bạn có chắc chắn muốn xóa user này?")) {
+            console.log("Xóa User ID:", id);
+        }
+    }
+</script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

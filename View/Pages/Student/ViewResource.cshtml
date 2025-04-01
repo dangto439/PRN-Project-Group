@@ -1,0 +1,101 @@
+﻿@page
+@model View.Pages.Student.ViewResourceModel
+@{
+    ViewData["Title"] = "Xem tài nguyên";
+}
+
+<div class="container">
+    <h2 class="resource-title">@Model.ResourceItem.ResourceName</h2>
+
+    @if (Model.ResourceItem.ResourceType == "Video")
+    {
+        <div class="video-container">
+            <video width="100%" controls>
+                <source src="@Model.ResourceItem.FileUrl" type="video/mp4">
+                Trình duyệt không hỗ trợ video.
+            </video>
+        </div>
+    }
+    else if (Model.ResourceItem.ResourceType == "Document")
+    {
+        <div class="document-container">
+            <script>window.open("@Model.ResourceItem.FileUrl", "_blank");</script>
+            <p>Đang mở tài liệu trong tab mới...</p>
+        </div>
+    }
+
+    <form class="completion-form" method="post">
+        <input type="hidden" name="resourceId" value="@Model.ResourceItem.ResourceId" />
+        <button type="submit" class="btn-complete">Xác nhận hoàn thành</button>
+    </form>
+</div>
+
+
+<style>
+    /* Định dạng chung cho trang */
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f9fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    .resource-title {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    video {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .document-container {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #555;
+    }
+
+    .completion-container {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn-complete {
+        background-color: #28a745;
+        color: white;
+        padding: 12px 24px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn-complete:hover {
+            background-color: #218838;
+        }
+
+        .btn-complete:focus {
+            outline: none;
+        }
+
+</style>

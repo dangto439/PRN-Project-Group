@@ -10,6 +10,7 @@ namespace BusinessLogicLayer.Interfaces
     public interface IContact
     {
         Task<List<Contact>> Get();
+        Task<List<Contact>> GetByEmail(string email);
         Task<Contact> GetById(int id);
         Task Create(Contact user);
         Task Update(Contact user);

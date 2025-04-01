@@ -10,6 +10,7 @@ namespace BusinessLogicLayer.Interfaces
     public interface IResource
     {
         Task<List<Resource>> Get();
+        Task<List<Resource>> GetByCourseId(int courseId);
         Task<Resource> GetById(int id);
         Task Create(Resource user);
         Task Update(Resource user);

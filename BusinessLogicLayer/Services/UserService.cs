@@ -42,12 +42,12 @@ namespace BusinessLogicLayer.Services
             return await _unitOfWork.GetRepository<User>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
         }
 
-        public async Task<User?> GetById(int id)
+        public async Task<User> GetById(int id)
         {
             return await _unitOfWork.GetRepository<User>().Entities.FirstOrDefaultAsync(x => x.UserId == id && !x.DeleteAt.HasValue);
         }
 
-        public async Task<User?> Login(string username, string password)
+        public async Task<User> Login(string username, string password)
         {
             var user = await _unitOfWork.GetRepository<User>().Entities.FirstOrDefaultAsync(x => (x.Username == username && x.Password == password) || (x.Email == username && x.Password == password));
             return user;
@@ -58,6 +58,24 @@ namespace BusinessLogicLayer.Services
             user.UpdatedAt = DateTime.Now;
             await _unitOfWork.GetRepository<User>().UpdateAsync(user);
             await _unitOfWork.GetRepository<User>().SaveAsync();
+        }
+
+        public async Task<int> CoutUser()
+        {
+            return await _unitOfWork.GetRepository<User>().Entities.Where(x => !x.DeleteAt.HasValue).CountAsync();
+        }
+        public async Task<int> CoutLecturer()
+        {
+            return await _unitOfWork.GetRepository<User>().Entities.Where(x => !x.DeleteAt.HasValue && x.Role == "LECTURER").CountAsync();
+        }
+        public async Task<int> CoutCustomer()
+        {
+            return await _unitOfWork.GetRepository<User>().Entities.Where(x => !x.DeleteAt.HasValue && x.Role == "CUSTOMER").CountAsync();
+        }
+
+        public async Task<List<User>> GetByEmail(string email)
+        {
+            return await _unitOfWork.GetRepository<User>().Entities.Where(x => x.Email.ToLower().Contains(email.Trim().ToLower()) && !x.DeleteAt.HasValue).ToListAsync();
         }
     }
 }

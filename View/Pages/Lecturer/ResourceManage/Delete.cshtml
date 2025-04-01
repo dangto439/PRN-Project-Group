@@ -1,0 +1,44 @@
+﻿@page
+@model View.Pages.Lecturer.ResourceManage.DeleteModel
+
+@{
+    ViewData["Title"] = "Xóa tài liệu";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-danger text-white">
+            <h3 class="mb-0 text-light"><i class="fas fa-trash-alt me-2"></i> Xóa tài liệu</h3>
+        </div>
+        <div class="card-body">
+            <h5 class="text-danger">Bạn có chắc chắn muốn xóa tài liệu này?</h5>
+            <hr />
+            <dl class="row">
+                <dt class="col-sm-3">Tên tài liệu:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Resource.ResourceName)</dd>
+
+                <dt class="col-sm-3">Loại tài liệu:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Resource.ResourceType)</dd>
+
+                <dt class="col-sm-3">Đường dẫn:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Resource.FileUrl)</dd>
+
+                <dt class="col-sm-3">Khóa học:</dt>
+                <dd class="col-sm-9">@Html.DisplayFor(model => model.Resource.Course.CourseName)</dd>
+
+            </dl>
+
+            <form method="post">
+                <input type="hidden" asp-for="Resource.ResourceId" />
+                <div class="d-flex justify-content-between">
+                    <a asp-page="/Lecturer/ResourceManagement" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i> Quay lại
+                    </a>
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fas fa-trash me-2"></i> Xóa
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

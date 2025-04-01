@@ -13,9 +13,6 @@ public partial class PRN222ProjectTeamContext : DbContext
         : base(options)
     {
     }
-
-    public virtual DbSet<Class> Classes { get; set; }
-
     public virtual DbSet<Contact> Contacts { get; set; }
 
     public virtual DbSet<Course> Courses { get; set; }
@@ -32,44 +29,6 @@ public partial class PRN222ProjectTeamContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Class>(entity =>
-        {
-            entity.HasKey(e => e.ClassId).HasName("PK__Classes__FDF479868DEADBFA");
-
-            entity.Property(e => e.ClassId).HasColumnName("class_id");
-            entity.Property(e => e.ClassName)
-                .IsRequired()
-                .HasMaxLength(100)
-                .IsUnicode(false)
-                .HasColumnName("class_name");
-            entity.Property(e => e.CourseId).HasColumnName("course_id");
-            entity.Property(e => e.CreatedAt)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime")
-                .HasColumnName("created_at");
-            entity.Property(e => e.EndDate)
-                .HasColumnType("date")
-                .HasColumnName("end_date");
-            entity.Property(e => e.LecturerId).HasColumnName("lecturer_id");
-            entity.Property(e => e.StartDate)
-                .HasColumnType("date")
-                .HasColumnName("start_date");
-            entity.Property(e => e.UpdatedAt)
-                .HasDefaultValueSql("(getdate())")
-                .HasColumnType("datetime")
-                .HasColumnName("updated_at");
-
-            entity.HasOne(d => d.Course).WithMany(p => p.Classes)
-                .HasForeignKey(d => d.CourseId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Classes__course___45F365D3");
-
-            entity.HasOne(d => d.Lecturer).WithMany(p => p.Classes)
-                .HasForeignKey(d => d.LecturerId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Classes__lecture__46E78A0C");
-        });
-
         modelBuilder.Entity<Contact>(entity =>
         {
             entity.HasKey(e => e.ContactId).HasName("PK__Contacts__024E7A863D6C3367");
@@ -136,7 +95,6 @@ public partial class PRN222ProjectTeamContext : DbContext
             entity.HasKey(e => e.EnrollmentId).HasName("PK__Enrollme__6D24AA7A2F897312");
 
             entity.Property(e => e.EnrollmentId).HasColumnName("enrollment_id");
-            entity.Property(e => e.ClassId).HasColumnName("class_id");
             entity.Property(e => e.CreatedAt)
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
@@ -153,11 +111,6 @@ public partial class PRN222ProjectTeamContext : DbContext
                 .HasDefaultValueSql("(getdate())")
                 .HasColumnType("datetime")
                 .HasColumnName("updated_at");
-
-            entity.HasOne(d => d.Class).WithMany(p => p.Enrollments)
-                .HasForeignKey(d => d.ClassId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Enrollmen__class__4D94879B");
 
             entity.HasOne(d => d.Student).WithMany(p => p.Enrollments)
                 .HasForeignKey(d => d.StudentId)

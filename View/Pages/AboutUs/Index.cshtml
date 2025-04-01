@@ -1,0 +1,467 @@
+﻿@page
+@model View.Pages.AboutUs.IndexModel
+@{
+    ViewData["Title"] = "Về chúng tôi";
+    Layout = "_Layout";
+}
+
+<style>
+    /* Màu sắc chủ đạo */
+    :root {
+        --primary-color: #1a76d1;
+        --primary-dark: #155a9f;
+        --secondary-color: #f8f9fa;
+        --accent-color: #ff6b35;
+        --text-color: #333;
+        --text-light: #777;
+    }
+
+    /* Section chung */
+    .about-section {
+        padding: 5rem 0;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+
+    .section-title {
+        color: var(--primary-color);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+        position: relative;
+        display: inline-block;
+    }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+        }
+
+    .section-subtitle {
+        color: var(--text-light);
+        font-size: 1.2rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    /* Lịch sử hình thành */
+    .history-timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 4rem auto;
+    }
+
+        .history-timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: var(--primary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+        }
+
+    .timeline-item {
+        padding: 10px 40px;
+        position: relative;
+        width: 50%;
+        box-sizing: border-box;
+    }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: white;
+            border: 4px solid var(--accent-color);
+            border-radius: 50%;
+            top: 15px;
+            z-index: 1;
+        }
+
+    .left {
+        left: 0;
+        text-align: right;
+    }
+
+    .right {
+        left: 50%;
+        text-align: left;
+    }
+
+    .left::after {
+        right: -12px;
+    }
+
+    .right::after {
+        left: -12px;
+    }
+
+    .timeline-content {
+        padding: 20px 30px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .timeline-year {
+        color: var(--accent-color);
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .timeline-title {
+        color: var(--primary-color);
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    /* Sứ mệnh và tầm nhìn */
+    .mission-vision {
+        background-color: var(--secondary-color);
+        padding: 4rem 0;
+    }
+
+    .mv-card {
+        background-color: white;
+        border-radius: 10px;
+        padding: 2.5rem;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        height: 100%;
+        transition: all 0.3s ease;
+    }
+
+        .mv-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+    .mv-icon {
+        font-size: 3rem;
+        color: var(--accent-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .mv-title {
+        color: var(--primary-color);
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Đội ngũ lãnh đạo */
+    .team-member {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .team-img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid white;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        margin: 0 auto 1.5rem;
+    }
+
+    .team-name {
+        color: var(--primary-color);
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    .team-position {
+        color: var(--accent-color);
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    .team-social {
+        margin-top: 1rem;
+    }
+
+        .team-social a {
+            color: var(--text-light);
+            margin: 0 0.5rem;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+            .team-social a:hover {
+                color: var(--primary-color);
+            }
+
+    /* Responsive */
+    @@media (max-width: 768px) {
+        .history-timeline::after {
+            left: 31px;
+        }
+
+        .timeline-item {
+            width: 100%;
+            padding-left: 70px;
+            padding-right: 25px;
+        }
+
+            .timeline-item::after {
+                left: 21px;
+            }
+
+        .left, .right {
+            left: 0;
+            text-align: left;
+        }
+
+        .mv-card {
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+</style>
+
+<!-- Banner giới thiệu -->
+<section class="hero-banner" style="background: linear-gradient(rgba(26, 118, 209, 0.8), rgba(26, 118, 209, 0.8)), url('/images/dept-1.jpg') center/cover; height: 400px; display: flex; align-items: center;">
+    <div class="container text-center text-white">
+        <h1 class="display-4 font-weight-bold mb-4">Về Viện Nghiên cứu & Đào tạo Sức khỏe</h1>
+        <p class="lead mb-0">Hành trình phát triển và những giá trị cốt lõi của chúng tôi</p>
+    </div>
+</section>
+
+<!-- Giới thiệu chung -->
+<section class="about-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Giới thiệu về Viện</h2>
+            <p class="section-subtitle">Viện Nghiên cứu & Đào tạo Sức khỏe là đơn vị tiên phong trong lĩnh vực nghiên cứu và đào tạo y tế chất lượng cao tại Việt Nam</p>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="/images/doc-1.jpg" alt="Về Viện Nghiên cứu & Đào tạo Sức khỏe" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-lg-6">
+                <h3 class="mb-4" style="color: var(--primary-color);">Sứ mệnh của chúng tôi</h3>
+                <p class="mb-4">Chúng tôi cam kết mang đến những chương trình đào tạo chất lượng cao và các nghiên cứu khoa học tiên tiến nhằm nâng cao sức khỏe cộng đồng, đặc biệt là sức khỏe trẻ em.</p>
+                <p class="mb-4">Với đội ngũ chuyên gia đầu ngành và hệ thống cơ sở vật chất hiện đại, chúng tôi tự hào là đơn vị dẫn đầu trong lĩnh vực nghiên cứu và đào tạo y khoa.</p>
+                <div class="d-flex align-items-center">
+                    <div class="mr-4">
+                        <div class="h2 mb-0" style="color: var(--accent-color);">15+</div>
+                        <div>Năm kinh nghiệm</div>
+                    </div>
+                    <div class="mr-4">
+                        <div class="h2 mb-0" style="color: var(--accent-color);">50+</div>
+                        <div>Chuyên gia</div>
+                    </div>
+                    <div>
+                        <div class="h2 mb-0" style="color: var(--accent-color);">100+</div>
+                        <div>Dự án nghiên cứu</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Lịch sử hình thành -->
+<section class="about-section bg-light">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Lịch sử hình thành</h2>
+            <p class="section-subtitle">Hành trình phát triển và những cột mốc quan trọng</p>
+        </div>
+        <div class="history-timeline">
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-year">2005</div>
+                    <h3 class="timeline-title">Thành lập Viện</h3>
+                    <p>Viện chính thức được thành lập với sứ mệnh nghiên cứu và đào tạo trong lĩnh vực sức khỏe cộng đồng.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-year">2010</div>
+                    <h3 class="timeline-title">Mở rộng quy mô</h3>
+                    <p>Phát triển thêm 3 phòng nghiên cứu chuyên sâu và hợp tác quốc tế với các tổ chức y tế hàng đầu.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-year">2015</div>
+                    <h3 class="timeline-title">Đạt chuẩn quốc tế</h3>
+                    <p>Được công nhận đạt tiêu chuẩn ISO trong nghiên cứu và đào tạo y khoa.</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <div class="timeline-year">2020</div>
+                    <h3 class="timeline-title">Phát triển toàn diện</h3>
+                    <p>Mở rộng hoạt động ra 5 tỉnh thành với hơn 100 cán bộ nghiên cứu và giảng dạy.</p>
+                </div>
+            </div>
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <div class="timeline-year">2023</div>
+                    <h3 class="timeline-title">Đổi mới sáng tạo</h3>
+                    <p>Ứng dụng công nghệ AI và Big Data vào nghiên cứu y học và đào tạo từ xa.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sứ mệnh và tầm nhìn -->
+<section class="mission-vision">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="mv-title">Sứ mệnh</h3>
+                    <p>Nâng cao chất lượng nghiên cứu và đào tạo y khoa, góp phần cải thiện sức khỏe cộng đồng, đặc biệt là sức khỏe trẻ em thông qua các chương trình đào tạo chuyên sâu và nghiên cứu khoa học tiên tiến.</p>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4 mb-md-0">
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="mv-title">Tầm nhìn</h3>
+                    <p>Trở thành viện nghiên cứu và đào tạo hàng đầu về sức khỏe tại Việt Nam và khu vực, tiên phong trong ứng dụng công nghệ cao vào nghiên cứu y học và đào tạo chuyên gia y tế chất lượng cao.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="mv-card">
+                    <div class="mv-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3 class="mv-title">Giá trị cốt lõi</h3>
+                    <ul style="padding-left: 20px;">
+                        <li>Chất lượng xuất sắc</li>
+                        <li>Sáng tạo đột phá</li>
+                        <li>Hợp tác phát triển</li>
+                        <li>Trách nhiệm xã hội</li>
+                        <li>Đạo đức nghề nghiệp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Đội ngũ lãnh đạo -->
+<section class="about-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Đội ngũ lãnh đạo</h2>
+            <p class="section-subtitle">Những chuyên gia đầu ngành với nhiều năm kinh nghiệm</p>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="team-member">
+                    <img src="/images/doc-2.jpg" alt="GS. Nguyễn Văn A" class="team-img">
+                    <h3 class="team-name">GS. Nguyễn Văn Hùng</h3>
+                    <p class="team-position">Viện trưởng</p>
+                    <p>Tiến sĩ Y khoa, 20 năm kinh nghiệm nghiên cứu và giảng dạy trong lĩnh vực nhi khoa.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <img src="/images/doc-3.jpg" alt="PGS. Trần Thị B" class="team-img">
+                    <h3 class="team-name">PGS. Trần Thị Thanh</h3>
+                    <p class="team-position">Phó Viện trưởng</p>
+                    <p>Tiến sĩ Dịch tễ học, chuyên gia về sức khỏe cộng đồng và phòng chống dịch bệnh.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <img src="/images/doc-4.jpg" alt="TS. Lê Văn C" class="team-img">
+                    <h3 class="team-name">TS. Lê Văn Quá</h3>
+                    <p class="team-position">Trưởng phòng Đào tạo</p>
+                    <p>Chuyên gia đào tạo y khoa với nhiều công trình nghiên cứu về giáo dục y tế.</p>
+                    <div class="team-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Thư viện ảnh -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Thư viện ảnh</h2>
+            <p class="section-subtitle">Những khoảnh khắc hoạt động của Viện</p>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-6 mb-4">
+                <a href="/images/abouts/5.jpg" data-lightbox="gallery">
+                    <img src="/images/doc-5.jpg" alt="Hoạt động nghiên cứu" class="img-fluid rounded shadow-sm">
+                </a>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <a href="/images/abouts/6.jpg" data-lightbox="gallery">
+                    <img src="/images/doc-6.jpg" alt="Lớp đào tạo" class="img-fluid rounded shadow-sm">
+                </a>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <a href="/images/abouts/7.jpg" data-lightbox="gallery">
+                    <img src="/images/doc-7.jpg" alt="Hội thảo khoa học" class="img-fluid rounded shadow-sm">
+                </a>
+            </div>
+            <div class="col-md-3 col-6 mb-4">
+                <a href="/images/abouts/8.jpg" data-lightbox="gallery">
+                    <img src="/images/doc-8.jpg" alt="Hoạt động cộng đồng" class="img-fluid rounded shadow-sm">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Thư ngỏ từ Viện trưởng -->
+<section class="py-5" style="background-color: var(--primary-color); color: white;">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="/images/abouts/9.jpg" alt="Viện trưởng" class="img-fluid rounded-circle shadow" style="max-width: 250px; border: 5px solid white;">
+            </div>
+            <div class="col-md-8">
+                <blockquote class="blockquote">
+                    <p class="mb-4 font-italic" style="font-size: 1.2rem;">"Với tầm nhìn trở thành trung tâm nghiên cứu và đào tạo y khoa hàng đầu, chúng tôi cam kết không ngừng nâng cao chất lượng, đổi mới sáng tạo để mang lại những giá trị tốt nhất cho cộng đồng. Sức khỏe của nhân dân là động lực để chúng tôi không ngừng phấn đấu."</p>
+                    <footer class="blockquote-footer text-white">GS. Nguyễn Thế Đại, <cite>Viện trưởng</cite></footer>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Thêm thư viện cần thiết -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>

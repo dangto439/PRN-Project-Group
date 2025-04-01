@@ -1,0 +1,74 @@
+﻿@page
+@model View.Pages.Lecturer.CourseManage.CreateModel
+
+@{
+    ViewData["Title"] = "Tạo khóa học";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-success text-white">
+            <h3 class="mb-0 text-light"><i class="fas fa-plus-circle me-2"></i> Tạo khóa học</h3>
+        </div>
+        <div class="card-body">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Course.ImageUrl" class="form-label fw-bold"></label>
+                    <input asp-for="Course.ImageUrl" class="form-control" />
+                    <span asp-validation-for="Course.ImageUrl" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Course.CourseName" class="form-label fw-bold"></label>
+                    <input asp-for="Course.CourseName" class="form-control" />
+                    <span asp-validation-for="Course.CourseName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Course.Description" class="form-label fw-bold"></label>
+                    <textarea asp-for="Course.Description" class="form-control" rows="4"></textarea>
+                    <span asp-validation-for="Course.Description" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Course.Type" class="form-label fw-bold"></label>
+                    <select asp-for="Course.Type" class="form-select">
+                        <option value="Online">Online</option>
+                        <option value="Offline">Offline</option>
+                    </select>
+                    <span asp-validation-for="Course.Type" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Course.Price" class="form-label fw-bold"></label>
+                    <input asp-for="Course.Price" type="number" class="form-control" />
+                    <span asp-validation-for="Course.Price" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mt-4 text-center">
+                    <button type="submit" class="btn btn-success">
+                        <i class="fas fa-save me-2"></i> Tạo mới
+                    </button>
+                    <a asp-page="/Lecturer/CourseManagement" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i> Quay lại
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 0.5rem;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

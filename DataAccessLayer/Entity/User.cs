@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccessLayer.Entity;
 
@@ -14,7 +15,7 @@ public partial class User
     public string Password { get; set; }
 
     public string Email { get; set; }
-
+    [Column(TypeName = "nvarchar(255)")]
     public string FullName { get; set; }
 
     public string Role { get; set; }
@@ -23,9 +24,6 @@ public partial class User
 
     public DateTime? UpdatedAt { get; set; }
     public DateTime? DeleteAt { get; set; }
-
-    public virtual ICollection<Class> Classes { get; set; } = new List<Class>();
-
     public virtual ICollection<Course> Courses { get; set; } = new List<Course>();
 
     public virtual ICollection<Enrollment> Enrollments { get; set; } = new List<Enrollment>();

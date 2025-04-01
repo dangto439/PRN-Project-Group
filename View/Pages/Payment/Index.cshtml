@@ -1,0 +1,99 @@
+﻿@page
+@model View.Pages.Payment.IndexModel
+@{
+    ViewData["Title"] = "Thanh toán khóa học";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <title>@ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url('/images/payment_bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .payment-container {
+            max-width: 500px;
+            margin: 80px auto;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .payment-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .course-name {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .amount {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #28a745;
+            margin-bottom: 20px;
+        }
+
+        .btn-pay {
+            background-color: #ff6600;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            border: none;
+            transition: background 0.3s ease-in-out;
+            cursor: pointer;
+        }
+
+            .btn-pay:hover {
+                background-color: #cc5200;
+            }
+
+        .btn-back {
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 18px;
+            font-size: 1rem;
+            border-radius: 8px;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background 0.3s ease-in-out;
+        }
+
+            .btn-back:hover {
+                background-color: #5a6268;
+            }
+    </style>
+</head>
+<body>
+
+    <div class="payment-container">
+        <div class="payment-title">Xác nhận thanh toán</div>
+        <div class="course-name">Bạn có chắc muốn mua khóa học <strong>@Model.Course.CourseName</strong>?</div>
+        <div class="amount">Giá: @Model.Amount.ToString("N0") VND</div>
+
+        <form method="post">
+            <input type="hidden" name="amount" asp-for="Amount" />
+            <input type="hidden" name="courseId" value="@Model.Course.CourseId" />
+            <button type="submit" class="btn-pay">Thanh toán VNPAY</button>
+        </form>
+
+        <a href="/Courses/Details?id=@Model.Course.CourseId" class="btn-back">← Quay lại</a>
+    </div>
+
+</body>
+</html>

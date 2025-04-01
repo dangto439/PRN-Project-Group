@@ -10,9 +10,11 @@ namespace BusinessLogicLayer.Interfaces
     public interface ICourse
     {
         Task<List<Course>> Get();
+        Task<List<Course>> GetEnroll();
         Task<Course> GetById(int id);
         Task Create(Course user);
         Task Update(Course user);
         Task Delete(int id);
+        Task<int> CountCourse();
     }
 }

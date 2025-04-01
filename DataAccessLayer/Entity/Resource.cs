@@ -2,6 +2,7 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace DataAccessLayer.Entity;
 
@@ -10,11 +11,11 @@ public partial class Resource
     public int ResourceId { get; set; }
 
     public int CourseId { get; set; }
-
+    [Column(TypeName = "nvarchar(255)")]
     public string ResourceName { get; set; }
-
+    [Column(TypeName = "nvarchar(255)")]
     public string ResourceType { get; set; }
-
+    [Column(TypeName = "nvarchar(255)")]
     public string FileUrl { get; set; }
 
     public int CreatedBy { get; set; }
