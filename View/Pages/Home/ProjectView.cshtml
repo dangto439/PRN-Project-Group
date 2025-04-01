@@ -1,0 +1,20 @@
+﻿@page
+@model View.Pages.Home.ProjectViewModel
+@{
+    ViewData["Title"] = "Danh sách dự án";
+}
+
+<div class="container mt-4">
+    <h2 class="text-center mb-4">Danh Sách Dự Án</h2>
+
+    <ul class="list-group" style="margin-bottom:600px">
+        @foreach (var project in Model.ProjectList)
+        {
+            <li class="list-group-item">
+                <a asp-page="/Home/ProjectDetailView" asp-route-id="@project.ProjectId" class="text-decoration-none fw-bold">
+                    @project.ProjectName
+                </a>
+            </li>
+        }
+    </ul>
+</div>

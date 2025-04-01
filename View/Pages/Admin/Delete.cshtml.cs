@@ -5,16 +5,20 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using DataAccessLayer.Entity;
 using BusinessLogicLayer.Interfaces;
+using BusinessLogicLayer.Hubs;
+using Microsoft.AspNetCore.SignalR;
 
 namespace View.Pages.Admin
 {
     public class DeleteModel : PageModel
     {
         private readonly IUser _user;
+        private readonly IHubContext<SignalRAdmin> _hubContext;
 
-        public DeleteModel(IUser user)
+        public DeleteModel(IUser user, IHubContext<SignalRAdmin> hubContext)
         {
             _user = user;
+            _hubContext = hubContext;
         }
 
         [BindProperty]
@@ -58,7 +62,7 @@ namespace View.Pages.Admin
                 User = user;
                 await _user.Delete(id.Value);
             }
-
+            await _hubContext.Clients.All.SendAsync("LoadAdminDashboard");
             return RedirectToPage("/Admin/UserManagement");
         }
     }

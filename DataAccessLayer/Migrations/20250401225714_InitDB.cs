@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace DataAccessLayer.Migrations
 {
     /// <inheritdoc />
-    public partial class GenDB : Migration
+    public partial class InitDB : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,7 +17,7 @@ namespace DataAccessLayer.Migrations
                 {
                     contact_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    name = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false),
+                    name = table.Column<string>(type: "nvarchar(255)", unicode: false, maxLength: 100, nullable: false),
                     email = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false),
                     message = table.Column<string>(type: "text", nullable: false),
                     created_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
@@ -38,7 +38,7 @@ namespace DataAccessLayer.Migrations
                     username = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: false),
                     password = table.Column<string>(type: "varchar(255)", unicode: false, maxLength: 255, nullable: false),
                     email = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false),
-                    full_name = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false),
+                    full_name = table.Column<string>(type: "nvarchar(255)", unicode: false, maxLength: 100, nullable: false),
                     role = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     created_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
                     updated_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
@@ -55,7 +55,8 @@ namespace DataAccessLayer.Migrations
                 {
                     course_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    course_name = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false),
+                    ImageUrl = table.Column<string>(type: "nvarchar(255)", nullable: true),
+                    course_name = table.Column<string>(type: "nvarchar(255)", unicode: false, maxLength: 100, nullable: false),
                     description = table.Column<string>(type: "text", nullable: true),
                     type = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     price = table.Column<decimal>(type: "decimal(10,2)", nullable: false),
@@ -75,12 +76,37 @@ namespace DataAccessLayer.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Enrollments",
+                columns: table => new
+                {
+                    enrollment_id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    student_id = table.Column<int>(type: "int", nullable: false),
+                    CourseId = table.Column<int>(type: "int", nullable: false),
+                    Progress = table.Column<int>(type: "int", nullable: false),
+                    enrollment_date = table.Column<DateTime>(type: "date", nullable: false),
+                    payment_status = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    created_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
+                    updated_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
+                    DeleteAt = table.Column<DateTime>(type: "datetime2", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK__Enrollme__6D24AA7A2F897312", x => x.enrollment_id);
+                    table.ForeignKey(
+                        name: "FK__Enrollmen__stude__4CA06362",
+                        column: x => x.student_id,
+                        principalTable: "Users",
+                        principalColumn: "user_id");
+                });
+
+            migrationBuilder.CreateTable(
                 name: "News_Events",
                 columns: table => new
                 {
                     news_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    title = table.Column<string>(type: "varchar(255)", unicode: false, maxLength: 255, nullable: false),
+                    title = table.Column<string>(type: "nvarchar(255)", unicode: false, maxLength: 255, nullable: false),
                     content = table.Column<string>(type: "text", nullable: false),
                     category = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
                     event_date = table.Column<DateTime>(type: "date", nullable: true),
@@ -105,11 +131,11 @@ namespace DataAccessLayer.Migrations
                 {
                     project_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    project_name = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false),
+                    project_name = table.Column<string>(type: "nvarchar(255)", unicode: false, maxLength: 100, nullable: false),
                     description = table.Column<string>(type: "text", nullable: true),
                     start_date = table.Column<DateTime>(type: "date", nullable: false),
                     end_date = table.Column<DateTime>(type: "date", nullable: false),
-                    status = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    status = table.Column<string>(type: "varchar(50)", maxLength: 10, nullable: false),
                     created_by = table.Column<int>(type: "int", nullable: false),
                     created_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
                     updated_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
@@ -126,45 +152,15 @@ namespace DataAccessLayer.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Classes",
-                columns: table => new
-                {
-                    class_id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    course_id = table.Column<int>(type: "int", nullable: false),
-                    class_name = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false),
-                    start_date = table.Column<DateTime>(type: "date", nullable: false),
-                    end_date = table.Column<DateTime>(type: "date", nullable: false),
-                    lecturer_id = table.Column<int>(type: "int", nullable: false),
-                    created_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
-                    updated_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
-                    DeleteAt = table.Column<DateTime>(type: "datetime2", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK__Classes__FDF479868DEADBFA", x => x.class_id);
-                    table.ForeignKey(
-                        name: "FK__Classes__course___45F365D3",
-                        column: x => x.course_id,
-                        principalTable: "Courses",
-                        principalColumn: "course_id");
-                    table.ForeignKey(
-                        name: "FK__Classes__lecture__46E78A0C",
-                        column: x => x.lecturer_id,
-                        principalTable: "Users",
-                        principalColumn: "user_id");
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Resources",
                 columns: table => new
                 {
                     resource_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     course_id = table.Column<int>(type: "int", nullable: false),
-                    resource_name = table.Column<string>(type: "varchar(100)", unicode: false, maxLength: 100, nullable: false),
-                    resource_type = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
-                    file_url = table.Column<string>(type: "varchar(255)", unicode: false, maxLength: 255, nullable: false),
+                    resource_name = table.Column<string>(type: "nvarchar(255)", unicode: false, maxLength: 100, nullable: false),
+                    resource_type = table.Column<string>(type: "nvarchar(255)", maxLength: 10, nullable: false),
+                    file_url = table.Column<string>(type: "nvarchar(255)", unicode: false, maxLength: 255, nullable: false),
                     created_by = table.Column<int>(type: "int", nullable: false),
                     created_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
                     updated_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
@@ -185,54 +181,10 @@ namespace DataAccessLayer.Migrations
                         principalColumn: "user_id");
                 });
 
-            migrationBuilder.CreateTable(
-                name: "Enrollments",
-                columns: table => new
-                {
-                    enrollment_id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    student_id = table.Column<int>(type: "int", nullable: false),
-                    class_id = table.Column<int>(type: "int", nullable: false),
-                    enrollment_date = table.Column<DateTime>(type: "date", nullable: false),
-                    payment_status = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
-                    created_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
-                    updated_at = table.Column<DateTime>(type: "datetime", nullable: true, defaultValueSql: "(getdate())"),
-                    DeleteAt = table.Column<DateTime>(type: "datetime2", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK__Enrollme__6D24AA7A2F897312", x => x.enrollment_id);
-                    table.ForeignKey(
-                        name: "FK__Enrollmen__class__4D94879B",
-                        column: x => x.class_id,
-                        principalTable: "Classes",
-                        principalColumn: "class_id");
-                    table.ForeignKey(
-                        name: "FK__Enrollmen__stude__4CA06362",
-                        column: x => x.student_id,
-                        principalTable: "Users",
-                        principalColumn: "user_id");
-                });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Classes_course_id",
-                table: "Classes",
-                column: "course_id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Classes_lecturer_id",
-                table: "Classes",
-                column: "lecturer_id");
-
             migrationBuilder.CreateIndex(
                 name: "IX_Courses_created_by",
                 table: "Courses",
                 column: "created_by");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Enrollments_class_id",
-                table: "Enrollments",
-                column: "class_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Enrollments_student_id",
@@ -289,9 +241,6 @@ namespace DataAccessLayer.Migrations
 
             migrationBuilder.DropTable(
                 name: "Resources");
-
-            migrationBuilder.DropTable(
-                name: "Classes");
 
             migrationBuilder.DropTable(
                 name: "Courses");
