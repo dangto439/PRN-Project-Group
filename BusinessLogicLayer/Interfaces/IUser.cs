@@ -12,6 +12,7 @@ namespace BusinessLogicLayer.Interfaces
         Task<User> Login(string username, string password);
         Task<List<User>> Get();
         Task<User> GetById(int id);
+        Task<List<User>> GetByEmail(string email);
         Task Create (User user);
         Task Update (User user);
         Task Delete (int id);

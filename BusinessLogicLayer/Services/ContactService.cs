@@ -39,7 +39,7 @@ namespace BusinessLogicLayer.Services
 
         public async Task<List<Contact>> Get()
         {
-            return await _unitOfWork.GetRepository<Contact>().Entities.Where(x => !x.DeleteAt.HasValue).ToListAsync();
+            return await _unitOfWork.GetRepository<Contact>().Entities.Where(x => !x.DeleteAt.HasValue).AsNoTracking().ToListAsync();
         }
 
         public async Task<Contact?> GetById(int id)
@@ -52,6 +52,11 @@ namespace BusinessLogicLayer.Services
             contact.UpdatedAt = DateTime.Now;
             await _unitOfWork.GetRepository<Contact>().UpdateAsync(contact);
             await _unitOfWork.GetRepository<Contact>().SaveAsync();
+        }
+
+        public async Task<List<Contact>> GetByEmail(string email)
+        {
+            return await _unitOfWork.GetRepository<Contact>().Entities.Where(x => x.Email.ToLower().Contains(email.Trim().ToLower()) && !x.DeleteAt.HasValue).AsNoTracking().ToListAsync();
         }
     }
 }

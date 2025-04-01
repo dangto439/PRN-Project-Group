@@ -72,5 +72,10 @@ namespace BusinessLogicLayer.Services
         {
             return await _unitOfWork.GetRepository<User>().Entities.Where(x => !x.DeleteAt.HasValue && x.Role == "CUSTOMER").CountAsync();
         }
+
+        public async Task<List<User>> GetByEmail(string email)
+        {
+            return await _unitOfWork.GetRepository<User>().Entities.Where(x => x.Email.ToLower().Contains(email.Trim().ToLower()) && !x.DeleteAt.HasValue).ToListAsync();
+        }
     }
 }

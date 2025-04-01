@@ -1,0 +1,76 @@
+﻿@page
+@model View.Pages.Admin.News.DeleteModel
+
+@{
+    ViewData["Title"] = "Xóa tin tức";
+}
+
+<div class="container mt-4">
+    <div class="card shadow">
+        <div class="card-header bg-danger text-white">
+            <h3 class="mb-0 text-light"><i class="fas fa-trash-alt me-2"></i> Xác nhận xóa</h3>
+        </div>
+        <div class="card-body">
+            <h4 class="text-danger mb-4">Bạn có chắc chắn muốn xóa tin tức này?</h4>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4 text-muted">Tiêu đề</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.NewsEvent.Title)</dd>
+
+                        <dt class="col-sm-4 text-muted">Danh mục</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.NewsEvent.Category)</dd>
+
+                        <dt class="col-sm-4 text-muted">Ngày sự kiện</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.NewsEvent.EventDate)</dd>
+                    </dl>
+                </div>
+
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4 text-muted">Người tạo</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.NewsEvent.CreatedByNavigation.Email)</dd>
+
+                        <dt class="col-sm-4 text-muted">Ngày tạo</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.NewsEvent.CreatedAt)</dd>
+
+                        <dt class="col-sm-4 text-muted">Cập nhật</dt>
+                        <dd class="col-sm-8">@Html.DisplayFor(model => model.NewsEvent.UpdatedAt)</dd>
+
+                        <dt class="col-sm-4 text-muted">Xóa lúc</dt>
+                        <dd class="col-sm-8">@(Model.NewsEvent.DeleteAt?.ToString() ?? "Chưa xóa")</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer bg-light">
+            <form method="post">
+                <input type="hidden" asp-for="NewsEvent.NewsId" />
+                <div class="d-flex justify-content-between">
+                    <a asp-page="/Admin/NewsManagement" class="btn btn-secondary">
+                        <i class="fas fa-arrow-left me-2"></i> Quay lại
+                    </a>
+                    <button type="submit" class="btn btn-danger">
+                        <i class="fas fa-trash-alt me-2"></i> Xác nhận xóa
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 0.5rem;
+    }
+
+    dt {
+        font-weight: 500;
+    }
+
+    dd {
+        margin-bottom: 0.75rem;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">

@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjZXNzRGVuaWVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Admin/ContactManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ29udGFjdE1hbmFnZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -44,8 +48,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Admin/DeleteContact.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlQ29udGFjdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Admin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Admin/NewsManagement.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTmV3c01hbmFnZW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Admin/News/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTmV3c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Admin/News/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTmV3c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Admin/News/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTmV3c1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/DANG TO/Documents/WorkSpace/Học/PRN222/Razor/PRN222_Project_Final_Team/View/Pages/Admin/UserManagement.cshtml]

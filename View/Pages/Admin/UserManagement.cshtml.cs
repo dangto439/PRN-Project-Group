@@ -1,9 +1,7 @@
 ﻿using BusinessLogicLayer.Interfaces;
-using BusinessLogicLayer.Services;
 using DataAccessLayer.Entity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Threading.Tasks;
 
 namespace View.Pages.Admin
 {
@@ -17,30 +15,18 @@ namespace View.Pages.Admin
         }
 
         public List<User> Users { get; set; }
-
+        [BindProperty (SupportsGet = true)]
+        public string Search { get; set; }
         public async Task OnGet()
         {
-            Users = await _userService.Get();
-        }
-
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> OnPostUpdateRole(int userId, string role)
-        {
-            if (string.IsNullOrEmpty(role))
+            if (String.IsNullOrEmpty(Search))
             {
-                return new JsonResult(new { success = false, message = "Vai trò không hợp lệ" });
-            }
-
-            var user = await _userService.GetById(userId);
-            if (user == null)
+                Users = await _userService.Get();
+            } else
             {
-                return new JsonResult(new { success = false, message = "Không tìm thấy user" });
+                Users = await _userService.GetByEmail(Search);
             }
-
-            user.Role = role;
-            await _userService.Update(user);
-            return new JsonResult(new { success = true, message = "Cập nhật thành công" });
-
+            
         }
     }
 }
